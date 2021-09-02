@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>pdf插件</title>
-    <url>/2021/09/02/pdf%E6%8F%92%E4%BB%B6/</url>
-    <content><![CDATA[<center> **PDF插件** </center>
- 
-<div class="pdf-container" data-target="./test.pdf" data-height="500px"></div>
-
-]]></content>
-      <tags>
-        <tag>已解决</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>好番推荐</title>
     <url>/2021/08/29/%E5%BE%85%E8%A7%A3%E5%86%B3%20-%20%E5%89%AF%E6%9C%AC/</url>
     <content><![CDATA[<p>好番推荐？</p>
@@ -22,6 +10,17 @@
       </categories>
       <tags>
         <tag>待解决</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>pdf插件</title>
+    <url>/2021/09/02/pdf%E6%8F%92%E4%BB%B6/</url>
+    <content><![CDATA[<p><strong><center> PDF插件 </center></strong></p>
+<div class="pdf-container" data-target="./test.pdf" data-height="500px"></div>
+
+]]></content>
+      <tags>
+        <tag>已解决</tag>
       </tags>
   </entry>
   <entry>
