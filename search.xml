@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>pdf</title>
-    <url>/2021/09/02/pdf/</url>
+    <title>pdf插件</title>
+    <url>/2021/09/02/pdf%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<center> **PDF插件** </center>
  
 <div class="pdf-container" data-target="./test.pdf" data-height="500px"></div>
 
 ]]></content>
+      <tags>
+        <tag>已解决</tag>
+      </tags>
   </entry>
   <entry>
     <title>好番推荐</title>
