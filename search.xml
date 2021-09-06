@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>pdf插件</title>
-    <url>/2021/09/02/pdf%E6%8F%92%E4%BB%B6/</url>
-    <content><![CDATA[<p><strong><center> PDF插件 </center></strong></p>
-<div class="pdf-container" data-target="./test.pdf" data-height="500px"></div>
-
-]]></content>
-      <tags>
-        <tag>已解决</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>吃吃吃笔记</title>
     <url>/2021/08/29/%E5%90%83%E5%90%83%E5%90%83_%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p><strong>写在前面：</strong>个人口味，仅供参考。</p>
@@ -62,6 +51,17 @@
       </categories>
       <tags>
         <tag>持续更新</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>pdf插件</title>
+    <url>/2021/09/02/pdf%E6%8F%92%E4%BB%B6/</url>
+    <content><![CDATA[<p><strong><center> PDF插件 </center></strong></p>
+<div class="pdf-container" data-target="./test.pdf" data-height="500px"></div>
+
+]]></content>
+      <tags>
+        <tag>已解决</tag>
       </tags>
   </entry>
   <entry>
