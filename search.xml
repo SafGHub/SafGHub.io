@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>pdf插件</title>
+    <url>/2021/09/02/pdf%E6%8F%92%E4%BB%B6/</url>
+    <content><![CDATA[<p><strong><center> PDF插件 </center></strong></p>
+<div class="pdf-container" data-target="./test.pdf" data-height="500px"></div>
+
+]]></content>
+      <tags>
+        <tag>已解决</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>吃吃吃笔记</title>
     <url>/2021/08/29/%E5%90%83%E5%90%83%E5%90%83_%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p><strong>写在前面：</strong>个人口味，仅供参考。</p>
@@ -54,17 +65,6 @@
       </tags>
   </entry>
   <entry>
-    <title>pdf插件</title>
-    <url>/2021/09/02/pdf%E6%8F%92%E4%BB%B6/</url>
-    <content><![CDATA[<p><strong><center> PDF插件 </center></strong></p>
-<div class="pdf-container" data-target="./test.pdf" data-height="500px"></div>
-
-]]></content>
-      <tags>
-        <tag>已解决</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>有限元学习笔记</title>
     <url>/2021/09/11/%E6%9C%89%E9%99%90%E5%85%83%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p><a href="http://www.doczj.com/doc/1638af390b1c59eef8c7b46a-3.html">ABAQUS建模如何施加预应力(残余应力)</a><br><a href="http://www.doczj.com/doc/51aaf84b2b160b4e767fcff9.html">ABAQUS模拟预应力筋的方法</a></p>
@@ -76,17 +76,21 @@
   <entry>
     <title>桃桃成长日记</title>
     <url>/2021/09/13/%E6%A1%83%E6%A1%83%E6%88%90%E9%95%BF%E6%97%A5%E8%AE%B0/</url>
-    <content><![CDATA[<p><strong>写在前面：</strong>桃桃，一只柯基，生日是2021年7月3日</p>
-<h1 id="桃桃到我家"><a href="#桃桃到我家" class="headerlink" title="桃桃到我家"></a>桃桃到我家</h1><p>&emsp;&emsp;很神奇，hyy学车回来，到宠物市场逛一遭，看见桃桃就走不动道了，说服我后，花了1900带桃桃回家。虽然之前撸猫撸狗也不少，但自己养宠还是头一遭，家里常用品更是一概不全。桃桃目前仅是一只小奶狗，还没打完疫苗，不能洗澡，hyy一边说臭一边老往身上抱，这种行为完全停不下来。等待桃桃的日用品到家，一天大概要看10次物流进度，在我手机上歇业好一阵子的淘宝，最近两天配合哔哩哔哩抄作业使用变得频繁了起来，就是物流慢啊物流慢，以前咋没感觉这么慢。</p>
+    <content><![CDATA[<p><strong>写在前面：</strong>桃桃，一只柯基，生日是2021年7月3日，9月12日遇见hyy。</p>
+<h1 id="桃桃到我家："><a href="#桃桃到我家：" class="headerlink" title="桃桃到我家："></a>桃桃到我家：</h1><p>&emsp;&emsp;一天，hyy学车结束，顺路逛了趟宠物市场，看见桃某某就走不动道了，火速联系我并说服我后，花了1900带桃桃回家。桃桃目前还是一只小奶狗，没打完疫苗，不能洗澡，hyy一边说臭一边整天忙着往身上抱呀抱。虽然我俩之前撸猫撸狗也不少，但自己养宠还是头一遭，家里常用品更是一概不全。我手机上失宠好一阵子的淘宝，最近两天配合哔哩哔哩抄作业，使用得频繁了起来，剁完手后焦急等待桃桃的日用品到家，一天大概要看10次物流进度，这两天尤其感觉物流慢啊物流慢。</p>
 <pre><code>桃桃的发家史
 </code></pre>
 <blockquote>
 <ul>
 <li>带桃桃回家 </li>
-<li>桃桃的粮食、奶粉、窝、体检、益生菌、剪刀、水壶、餐具、垫子、纸巾、洁足泡沫、吸水毛巾、消毒液</li>
+<li>桃桃的粮食、羊奶粉（目前吃了会拉肚子）、窝、体检、益生菌、剪刀、水壶、餐具、垫子、纸巾、洁足泡沫（不好用）、吸水毛巾、消毒液、玩具若干</li>
 </ul>
 </blockquote>
-<h1 id="桃桃的饮食注意事项"><a href="#桃桃的饮食注意事项" class="headerlink" title="桃桃的饮食注意事项"></a>桃桃的饮食注意事项</h1><p><strong>可以吃的水果：</strong>香蕉、蓝莓、苹果、草莓、西瓜。<br><strong>不可以吃的水果：</strong>葡萄、牛油果、樱桃、芒果、菠萝、荔枝、桃子等。</p>
+<h1 id="桃桃的饮食注意事项："><a href="#桃桃的饮食注意事项：" class="headerlink" title="桃桃的饮食注意事项："></a>桃桃的饮食注意事项：</h1><p><strong>可以吃的水果：</strong>香蕉、蓝莓、苹果、草莓、西瓜。<br><strong>不可以吃的水果：</strong>葡萄、牛油果、樱桃、芒果、菠萝、荔枝、桃子等。<br><strong>不可以吃的东西：</strong>洋葱（急性溶血症）、韭菜（刺激性食物，引发肠胃炎）、豆芽（不消化）、咖啡（咖啡因）、冻牛奶（腹泻）、生肉（寄生虫和细菌）、生鸡蛋（细菌和寄生虫）、巧克力（可可碱）、夏威夷果（狗狗过多食用会造成四肢乏力）</p>
+<h1 id="桃桃干的坏事："><a href="#桃桃干的坏事：" class="headerlink" title="桃桃干的坏事："></a>桃桃干的坏事：</h1><p>咬坏了hyy的衣服N件；<br>咬缺了hyy的拖鞋一双；<br>咬断入户光纤一根；<br>咬断网线一根。</p>
+<h1 id="桃桃的异食癖-大雾-："><a href="#桃桃的异食癖-大雾-：" class="headerlink" title="桃桃的异食癖(大雾)："></a>桃桃的异食癖(大雾)：</h1><p>树叶；泥巴；钉子；烂抹布；</p>
+<h1 id="桃桃让人省心的地方："><a href="#桃桃让人省心的地方：" class="headerlink" title="桃桃让人省心的地方："></a>桃桃让人省心的地方：</h1><p>不护食；不乱拉屎（划掉）拉尿；学会“坐”啦，“趴下”已经快学会了。</p>
+<h1 id="碎碎念："><a href="#碎碎念：" class="headerlink" title="碎碎念："></a>碎碎念：</h1><p>桃桃82天还没打完疫苗，一直没洗澡，感觉她有些痒了。<br>阅读了两篇关于柯基的<a href="https://zhuanlan.zhihu.com/p/79007706?utm_source=wechat_session&utm_medium=social&utm_oi=54401372782592&utm_campaign=shareopn&s_r=0">花色</a>和<a href="https://zhuanlan.zhihu.com/p/80043741?utm_source=wechat_session&utm_medium=social&utm_oi=54401372782592&utm_campaign=shareopn">头部</a>特征的文章。</p>
 ]]></content>
       <tags>
         <tag>桃桃</tag>
