@@ -74,6 +74,27 @@
       </tags>
   </entry>
   <entry>
+    <title>再攒一个NAS</title>
+    <url>/2022/02/28/%E5%86%8D%E6%94%92%E4%B8%80%E4%B8%AANAS/</url>
+    <content><![CDATA[<p><strong>写在前面：</strong>2022年2月最后一天，心里抑制不住地冒出了再攒一个NAS的想法。如果有两台，那么就可以有一台稳定保存数据，另一台用于折腾。假如想法付诸实践了，后续会持续更新的……</p>
+<span id="more"></span>
+
+<h1 id="硬件："><a href="#硬件：" class="headerlink" title="硬件："></a>硬件：</h1><p>低功耗为主 / 性能为主 ?</p>
+<p>Plex / KODI ?</p>
+<p>NAS机箱 / 普通台式机箱 ？</p>
+<p>4T / 8T ?</p>
+<p>犹豫ing~</p>
+<h1 id="软件："><a href="#软件：" class="headerlink" title="软件："></a>软件：</h1><p>freenas / 黑裙</p>
+<p>犹豫ing~</p>
+]]></content>
+      <categories>
+        <category>持续更新</category>
+      </categories>
+      <tags>
+        <tag>NAS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>吃吃吃笔记</title>
     <url>/2021/09/01/%E5%90%83%E5%90%83%E5%90%83_%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p><strong>写在前面：</strong>个人口味，仅供参考。</p>
@@ -116,14 +137,15 @@
 <h3 id="大理"><a href="#大理" class="headerlink" title="大理"></a>大理</h3><blockquote>
 <ul>
 <li>巍白正鱼庄(洱河北路)    &emsp;&emsp;#菜品还行</li>
-<li>小企鹅    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;#鲜啤，挺好喝，昆明一些烧烤摊也有，但是味道不同</li>
+<li>小企鹅    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;#鲜啤，挺好喝，昆明一些烧烤摊也有，但是味道不同（感觉大理酒厂的好些）</li>
 <li>巍山耙肉饵丝    &emsp;&emsp;&emsp;&emsp;#耙肉饵丝记得多加酸萝卜丝，好吃</li>
 </ul>
 </blockquote>
 <h3 id="昭通"><a href="#昭通" class="headerlink" title="昭通"></a>昭通</h3><blockquote>
 <ul>
 <li>苹果     &emsp;&emsp;#2021年双十一（立冬前后）苹果出糖心了，很好吃，据老板说，78月降水量多，会更甜一些。</li>
-<li>绥江蝽蟓     &emsp;&emsp;#我没吃过！听名字挺有特色，但换个说法更有“特色”：吃臭屁虫。绥江的臭屁虫真的好多好多！白天若开窗户，晚上必见几只蝽蟓！</li>
+<li>绥江蝽蟓     &emsp;&emsp;#我没吃过！吃臭屁虫，绥江的臭屁虫真的好多好多！白天若开窗户，晚上必见几只蝽蟓！</li>
+<li>酸菜红豆汤        #昭通的这个菜和别的地方的不一样！</li>
 </ul>
 </blockquote>
 ]]></content>
@@ -213,9 +235,13 @@
 
 <p>SCI<br><a href="https://sci-hub.se/">https://sci-hub.se/</a><br><a href="https://sci-hub.ru/">https://sci-hub.ru/</a></p>
 <p>第一个是 Crossref 元数据。这个巨量的数据库通过 DOIs 索引研究论文，并提供论文作者、发表年份、标题和其他相关信息的元数据。该数据库包含超过 1.2 亿条记录及 API，用户可以通过 torrents 下载。网站地址：<a href="https://www.crossref.org/">https://www.crossref.org/</a><br>第二个是 General Index。该数据库可以索引到 1.07 亿篇学术论文。网站地址：<a href="https://archive.org/details/GeneralIndex">https://archive.org/details/GeneralIndex</a><br>第三个是 OpenCitations Corpus。这个免费开放的数据库提供了互引论文的相关信息。网站地址：<a href="https://opencitations.net/corpus">https://opencitations.net/corpus</a><br>第四个是 Scopus。该数据库虽然不是免费的，但有免费访问的科学期刊信息表，用户在注册后可以下载。网站地址：<a href="https://www.scopus.com/sources.uri?zone=TopNavBar&amp;origin=searchbasic">https://www.scopus.com/sources.uri?zone=TopNavBar&amp;origin=searchbasic</a><br>第五个是 Scimago Journal &amp; Country Rank。这是一个免费访问的数据库，提供了科学期刊论文相关的内容。网站地址：<a href="https://www.scimagojr.com/">https://www.scimagojr.com/</a></p>
+<p>爱科学：<a href="https://www.iikx.com/">https://www.iikx.com/</a></p>
+<p>一、无敌全能综合导航站<br>1.虫部落（聚合搜索平台）<br><a href="https://search.chongbuluo.com/">https://search.chongbuluo.com</a><br>2.科塔学术（专业学术导航）<br><a href="https://site.sciping.com/">https://site.sciping.com</a><br>3.码力全开（设计资源导航）<br><a href="https://design.maliquankai.com/">https://design.maliquankai.com</a><br>4.SeeSeed（设计资源导航2）<br><a href="https://www.seeseed.com/">https://www.seeseed.com</a><br>5.书享家（电子书资源导航）<br><a href="http://shuxiangjia.cn/">http://shuxiangjia.cn</a><br>6.HiPPTer（PPT资源导航）<br><a href="https://www.hippter.com/">https://www.hippter.com</a></p>
 <blockquote>
-<p>其他<br>壁纸：<a href="https://wallhaven.cc/">https://wallhaven.cc/</a><br>软件：<a href="https://www.ghxi.com/">https://www.ghxi.com</a><br>收藏夹：<a href="https://spcqwserdvymm.com.vika.cn/share/shryNwH3HRgvzMTaZVAGx/fodkuzz5eaw0w">https://spcqwserdvymm.com.vika.cn/share/shryNwH3HRgvzMTaZVAGx/fodkuzz5eaw0w</a><br>图片，视频素材：<a href="https://www.pexels.com/zh-cn">https://www.pexels.com/zh-cn</a><br>Pixabay：<a href="https://pixabay.com/zh/">https://pixabay.com/zh/</a><br>设计百宝箱：<a href="http://www.shejibox.cn/">http://www.shejibox.cn/</a><br>seeseed：<a href="https://www.seeseed.com/">https://www.seeseed.com/</a><br>优设导航：<a href="https://hao.uisdc.com/">https://hao.uisdc.com/</a><br>编程导航：<a href="https://www.code-nav.cn/">https://www.code-nav.cn/</a><br>HiPPTer：<a href="http://www.hippter.com/">http://www.hippter.com/</a><br>淘声网：<a href="https://www.tosound.com/">https://www.tosound.com/</a><br>熊猫搜书：<a href="https://xmsoushu.com/">https://xmsoushu.com/</a><br>LKs的网站推荐：<a href="https://xiangjianan.gitee.io/lks/">https://xiangjianan.gitee.io/lks/</a> </p>
+<p>其他</p>
 </blockquote>
+<p>阿虚同学： <a href="http://axutongxue.com/">http://axutongxue.com/</a><br>好网站不私藏：<a href="https://www.207788.xyz/">https://www.207788.xyz/</a></p>
+<p>壁纸：<a href="https://wallhaven.cc/">https://wallhaven.cc/</a><br>软件：<a href="https://www.ghxi.com/">https://www.ghxi.com</a><br>收藏夹：<a href="https://spcqwserdvymm.com.vika.cn/share/shryNwH3HRgvzMTaZVAGx/fodkuzz5eaw0w">https://spcqwserdvymm.com.vika.cn/share/shryNwH3HRgvzMTaZVAGx/fodkuzz5eaw0w</a><br>图片，视频素材：<a href="https://www.pexels.com/zh-cn">https://www.pexels.com/zh-cn</a><br>Pixabay：<a href="https://pixabay.com/zh/">https://pixabay.com/zh/</a><br>设计百宝箱：<a href="http://www.shejibox.cn/">http://www.shejibox.cn/</a><br>seeseed：<a href="https://www.seeseed.com/">https://www.seeseed.com/</a><br>优设导航：<a href="https://hao.uisdc.com/">https://hao.uisdc.com/</a><br>编程导航：<a href="https://www.code-nav.cn/">https://www.code-nav.cn/</a><br>HiPPTer：<a href="http://www.hippter.com/">http://www.hippter.com/</a><br>淘声网：<a href="https://www.tosound.com/">https://www.tosound.com/</a><br>熊猫搜书：<a href="https://xmsoushu.com/">https://xmsoushu.com/</a><br>LKs的网站推荐：<a href="https://xiangjianan.gitee.io/lks/">https://xiangjianan.gitee.io/lks/</a> </p>
 ]]></content>
       <categories>
         <category>持续更新</category>
