@@ -74,27 +74,6 @@
       </tags>
   </entry>
   <entry>
-    <title>再攒一个NAS</title>
-    <url>/2022/02/28/%E5%86%8D%E6%94%92%E4%B8%80%E4%B8%AANAS/</url>
-    <content><![CDATA[<p><strong>写在前面：</strong>2022年2月最后一天，心里抑制不住地冒出了再攒一个NAS的想法。如果有两台，那么就可以有一台稳定保存数据，另一台用于折腾。假如想法付诸实践了，后续会持续更新的……</p>
-<span id="more"></span>
-
-<h1 id="硬件："><a href="#硬件：" class="headerlink" title="硬件："></a>硬件：</h1><p>低功耗为主 / 性能为主 ?</p>
-<p>Plex / KODI ?</p>
-<p>NAS机箱 / 普通台式机箱 ？</p>
-<p>4T / 8T ?</p>
-<p>犹豫ing~</p>
-<h1 id="软件："><a href="#软件：" class="headerlink" title="软件："></a>软件：</h1><p>freenas / 黑裙</p>
-<p>犹豫ing~</p>
-]]></content>
-      <categories>
-        <category>持续更新</category>
-      </categories>
-      <tags>
-        <tag>NAS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>吃吃吃笔记</title>
     <url>/2021/09/01/%E5%90%83%E5%90%83%E5%90%83_%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p><strong>写在前面：</strong>个人口味，仅供参考。</p>
@@ -176,23 +155,25 @@
 
 <center> 没错，这就是桃桃 </center> 
 
-<p><img src="https://dududou.oss-cn-beijing.aliyuncs.com/img/%E6%A1%83%E6%A1%83%E4%BD%93%E9%87%8D2.png" alt="桃桃体重2"></p>
+<p><img src="https://dududou.oss-cn-beijing.aliyuncs.com/img/%E6%A1%83%E6%A1%83%E4%BD%93%E9%87%8D%20DPI601.png" alt="桃桃体重 DPI601"></p>
 <center> 桃桃体重变化 </center> 
 
 <h1 id="桃桃到我家："><a href="#桃桃到我家：" class="headerlink" title="桃桃到我家："></a>桃桃到我家：</h1><p>&emsp;&emsp;一天，hyy学车结束，顺路逛了趟宠物市场，看见桃某某就走不动道了，火速联系并说服我后，花了1900带桃桃回家。桃桃目前还是一只小奶狗，没打完疫苗，不能洗澡，hyy一边说臭一边整天忙着往身上抱呀抱。虽然我俩之前撸猫撸狗也不少，但自己养宠还是头一遭，家里常用品更是一概不全。我手机上吃灰好一阵子的淘宝，最近两天配合哔哩哔哩抄作业，使用得频繁了起来，剁完手后焦急等待桃桃的日用品到家，一天大概要看10次物流进度，这两天尤其感觉物流慢啊物流慢。</p>
 <pre><code>桃桃的发家史:带桃桃回家、桃桃的粮食、羊奶粉（目前吃了会拉肚子）、窝、体检、益生菌、剪刀、水壶、餐具、垫子、纸巾、洁足泡沫（不好用）、吸水毛巾、消毒液、玩具若干、衣服若干、洗澡用品、梳子、围栏、香蕉船、航空箱、大宠爱、自动投喂箱、干燥剂、背带绳、磨牙用品、伤人赔钱、钙片、卵磷脂、狗厕所、尿片。
 </code></pre>
-<h1 id="桃桃的饮食注意事项："><a href="#桃桃的饮食注意事项：" class="headerlink" title="桃桃的饮食注意事项："></a>桃桃的饮食注意事项：</h1><p><strong>可以吃的水果：</strong>香蕉、蓝莓、苹果、草莓、西瓜。<br><strong>不可以吃的水果：</strong>葡萄、牛油果、樱桃、芒果、菠萝、荔枝、桃子等。<br><strong>不可以吃的东西：</strong>洋葱（急性溶血症）、韭菜（刺激性食物，引发肠胃炎）、豆芽（不消化）、咖啡（咖啡因）、冻牛奶（腹泻）、生肉（寄生虫和细菌）、生鸡蛋（细菌和寄生虫）、巧克力（可可碱）、夏威夷果（狗狗过多食用会造成四肢乏力）</p>
+<p>&emsp;&emsp;事实证明：自动投喂箱是没什么必要买的，用的次数太少了。</p>
+<h1 id="桃桃的饮食注意事项："><a href="#桃桃的饮食注意事项：" class="headerlink" title="桃桃的饮食注意事项："></a>桃桃的饮食注意事项：</h1><p><strong>可以吃的水果：</strong>火龙果、香蕉、蓝莓、苹果、草莓、西瓜、<del>柚子（挑食不吃）</del>。<br><strong>不可以吃的水果：</strong>葡萄、牛油果、樱桃、芒果、菠萝、荔枝、桃子等。<br><strong>不可以吃的东西：</strong>洋葱（急性溶血症）、韭菜（刺激性食物，引发肠胃炎）、豆芽（不消化）、咖啡（咖啡因）、冻牛奶（腹泻）、生肉（寄生虫和细菌）、生鸡蛋（细菌和寄生虫）、巧克力（可可碱）、夏威夷果（狗狗过多食用会造成四肢乏力）</p>
 <blockquote>
 <p>我们自己做的饭菜都不要给桃桃吃！！！</p>
 </blockquote>
-<p><strong>桃桃现在能吃的：</strong><br>1，蛋黄（每周可以吃三次水煮蛋蛋黄，蛋白不吃）<br>2，生白菜可以吃（可以吃两片）有时间的话各种绿色的蔬菜可以清水煮熟<br>3，原味酸奶（其他味道的不可以喂）<br>4，橘子，苹果（一次不能喂太多）<br>5，鸡胸肉水煮</p>
+<p><strong>桃桃现在能吃的：</strong><br>1，蛋黄（每周可以吃三次水煮蛋蛋黄，蛋白不吃）<br>2，生白菜可以吃（可以吃两片）有时间的话各种绿色的蔬菜可以清水煮熟<br>3，原味酸奶（其他味道的不可以喂）<br>4，火龙果、<del>橘子（挑食）</del>，苹果（一次不能喂太多）<br>5，鸡胸肉水煮</p>
 <blockquote>
-<p>桃桃一日三餐定时定量，她的勺子一勺就行，早晚各遛一次<br>早上7:30<br>中午12:30<br>晚上7:00</p>
+<p>桃桃一日<del>三餐</del>定时定量，她的勺子一勺就行，早晚各遛一次<br>早上7:30<br><del>中午12:30</del><br>晚上7:00</p>
 </blockquote>
-<h1 id="桃桃干的坏事："><a href="#桃桃干的坏事：" class="headerlink" title="桃桃干的坏事："></a>桃桃干的坏事：</h1><p>咬坏了hyy的衣服N件；<br>咬缺了hyy的拖鞋一双；<br>咬断入户光纤一根；<br>咬断网线一根。<br>牙齿误伤别人（完全是个意外：一日hyy带桃桃出去玩，路人老爷爷想摸摸桃桃，桃桃调皮，摸的过程中老爷爷手指不小心被桃桃牙齿划破，后让老人去打针消除隐患，商量后赔了650元。）<br>咬坏了背带绳一根。<br>咬坏了房东家沙发一个角（头疼不已，无颜面对房东）<br>咬坏了hyy的瑜伽垫（这天正好掉大牙）</p>
-<h1 id="桃桃的异食癖-大雾-："><a href="#桃桃的异食癖-大雾-：" class="headerlink" title="桃桃的异食癖(大雾)："></a>桃桃的异食癖(大雾)：</h1><p>树叶；泥巴；钉子；烂抹布；木头屑；鞋子能不能算上？</p>
-<h1 id="桃桃让人省心的地方："><a href="#桃桃让人省心的地方：" class="headerlink" title="桃桃让人省心的地方："></a>桃桃让人省心的地方：</h1><p>不护食；不乱拉屎（划掉）拉尿（也划掉2021/11/21）；学会“坐”啦，学会“握手”啦，“趴下”和“转圈”已经快学会了。</p>
+<h1 id="桃桃干的坏事："><a href="#桃桃干的坏事：" class="headerlink" title="桃桃干的坏事："></a>桃桃干的坏事：</h1><p>咬坏了hyy的衣服N件；<br>咬缺了hyy的拖鞋一双；<br>咬断入户光纤一根；<br>咬断网线一根。<br>牙齿误伤别人（完全是个意外：一日hyy带桃桃出去玩，路人老爷爷想摸摸桃桃，桃桃调皮，摸的过程中老爷爷手指不小心被桃桃牙齿划破，后让老人去打针消除隐患，商量后赔了650元。）<br>咬坏了背带绳一根。<br>咬坏了房东家沙发一个角、门框、墙壁踢脚线，<del>（头疼不已，无颜面对房东）</del>已经准备好赔钱了<br>咬坏了hyy的瑜伽垫（这天正好掉大牙）<br>8个月桃桃的牙齿没有之前尖了</p>
+<h1 id="桃桃的异食癖-大雾-："><a href="#桃桃的异食癖-大雾-：" class="headerlink" title="桃桃的异食癖(大雾)："></a>桃桃的异食癖(大雾)：</h1><p>树叶；泥巴；钉子；烂抹布；木头屑；拖鞋！</p>
+<p>尤其擅长逮住机会就啃起不管啥纸到处跑（想找我玩）。</p>
+<h1 id="桃桃让人省心的地方："><a href="#桃桃让人省心的地方：" class="headerlink" title="桃桃让人省心的地方："></a>桃桃让人省心的地方：</h1><p>不护食；<del>不乱拉屎拉尿</del>；学会“坐”啦，学会“握手”啦，“趴下”和“转圈”已经快学会了。</p>
 <h1 id="碎碎念："><a href="#碎碎念：" class="headerlink" title="碎碎念："></a>碎碎念：</h1><p>桃桃82天还没打完疫苗，一直没洗澡，感觉她有些痒了。<br>阅读了两篇关于柯基的<a href="https://zhuanlan.zhihu.com/p/79007706?utm_source=wechat_session&utm_medium=social&utm_oi=54401372782592&utm_campaign=shareopn&s_r=0">花色</a>和<a href="https://zhuanlan.zhihu.com/p/80043741?utm_source=wechat_session&utm_medium=social&utm_oi=54401372782592&utm_campaign=shareopn">头部</a>特征的文章。<br>2021年11月初，桃某某打完疫苗后终于洗完了澡，毛发很好看，健健康康的。<br>2021-11-19，桃桃的铲屎官终于拿到了驾照。<br>2021-11-24，最近桃某某体型飞速增长（主要是身长和体重），以前买的衣服肉眼可见的小了；桃某某鼻头还没完全黑掉，估计是不会全黑了，花鼻子妹儿。<br>2021-11-25：</p>
 <blockquote>
 <ul>
@@ -222,6 +203,14 @@
 </blockquote>
 <p>2022-1-7：昨天啃房东沙发，现场惨烈，挨了一顿打，今天没早饭吃。</p>
 <p>2022-1-12：hyy居然给我量了桃桃的三围，这个我就不配合记下来了，嘶。</p>
+<p>2022-2-10：假如要备孕，准备要小孩的话，家里说是不能养狗的。</p>
+<p>2022-3-3：</p>
+<ul>
+<li>桃桃开始掉毛了，真·从头开始；</li>
+<li>准备周末带她打疫苗去；</li>
+<li>今天她满8个月；</li>
+<li>还是怀念桃桃上沙发需要助跑和尝试多次的日子，现在这狗上沙发原地起跳就行，枯燥。</li>
+</ul>
 ]]></content>
       <tags>
         <tag>桃桃</tag>
@@ -249,6 +238,85 @@
       </categories>
       <tags>
         <tag>如何白嫖</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>再攒一个NAS</title>
+    <url>/2022/02/28/%E8%AE%B0%E5%BD%95%EF%BC%9A%E5%86%8D%E6%94%92%E4%B8%80%E4%B8%AANAS/</url>
+    <content><![CDATA[<p><strong>写在前面：</strong>2022年2月最后一天，心里抑制不住地冒出了再攒一个NAS的想法。如果有两台，那么就可以有一台稳定保存数据，另一台用于折腾。假如想法付诸实践了，后续会持续更新的……</p>
+<span id="more"></span>
+
+<h1 id="硬件："><a href="#硬件：" class="headerlink" title="硬件："></a>硬件：</h1><blockquote>
+<p><del>低功耗为主 / 性能为主 ?</del>    </p>
+<p>稳定为主！</p>
+<p><del>Plex / KODI ?</del></p>
+<p>这种事情留给另一台做吧。</p>
+<p>NAS机箱 / 普通台式机箱 ？</p>
+<p>4T / 8T ?</p>
+<p>犹豫ing~</p>
+</blockquote>
+<p><strong>内存</strong>：1T数据需配1G内存，务必支持ECC。</p>
+<p><strong>主板</strong>： 服务器主板 或 <a href="https://www.smzdm.com/fenlei/gongzuozhan/">工作站</a>主板，以保证 扩展性，稳定性，还有ECC的支持，带IPMI的主板优先推荐。</p>
+<blockquote>
+<p>超微（Supermicro）（优先推荐，价格也更高）</p>
+<p>永擎（ASRock Rack）（自古那啥出）</p>
+<p>ITX主板：永擎 C236M WS</p>
+<p>MATX主板：X11SSM-F（支持E3-1200V5 、V6，具体如 E3-1240L v5，4核8线程，25W tdp，无集显；E3-1260LV5 4核8线程 45Wtdp，约为i3 8100的性能，无集显）</p>
+</blockquote>
+<p><strong>CPU</strong>：不建议AMD</p>
+<blockquote>
+<p>推荐E5，因为扩展性更好，主要原因还是支持扩展更多的RAM。Haswell/Broadwell 以及老一点的E3 最多用 32GB RAM; Skylake 架构 则最多64GB RAM; Coffee Lake 能高达 128 GB RAM。</p>
+<p>轻度用户：G4400、G4600、G5500都是推荐的，更重要的是这些七代以上的U核显可以完全支持硬解，功耗还低，非常适合家庭入门用户。2核4线程，我亲测G4560集显下，玩<a href="https://pinpai.smzdm.com/42625/">英雄联盟</a>低画质可以稳定80帧附近</p>
+<p>中度用户：i3 6300和i3 8300，适合用一些jails或玩虚拟机的用户，4核心是必要的，前面如奔腾G4400只有2核，4核心在多口万兆、解码、虚拟机、搞AIO方面可以胜任</p>
+<p>重度用户：此时i5、i7等已经不支持ECC了，故而只能用E3、E5、W的至强CPU，通常是6核心起步，但要注意一般不带集显，要集显的需要挑型号。</p>
+<p>发烧用户：Xeon-D、AMD Epyc…</p>
+</blockquote>
+<p><strong>电源</strong>：80+ 金牌规格要比Corsair RM更好的电源，包括供电的线材等等，质量一定要好的。</p>
+<blockquote>
+<p>计算功耗：除了CPU内存主板万兆网卡等功耗<br>硬盘功耗需要特别注意瓦数：单个硬盘启动时瞬时功耗一般都超过20W，但都小于30W，建议计算的时候按照30W计算，以保证冗余</p>
+</blockquote>
+<p><strong>系统盘</strong>：16G起步，更推荐120G的sata或M2的SSD，推荐是组Mirror，不过不组似乎也没关系，需要把系统配置导出保存好，挖一挂了恢复也容易</p>
+<p><strong>网卡</strong>：一般主板都有双网口，推荐I210、I350，更多的是自己加一个10G网卡，推荐：Chelsio，实际可选的应该还有一些</p>
+<p><strong>固态</strong>：待深入了解。</p>
+<p><strong>Raid</strong>：raid z2 + 双NAS + 冷备份 + PC自身   </p>
+<blockquote>
+<p>为什么执着于数据安全？因为在多个重要时刻数据挂过（有手抖，也有遭遇突然断电这种意外）。</p>
+</blockquote>
+<p><strong>配置方案参考</strong>：抄作业时间</p>
+<ul>
+<li><strong>万兆工作室</strong>4K视频剪辑用truenas配置：</li>
+</ul>
+<blockquote>
+<p>E5-2618LV3 300<br>超微X10SRL-F 2000<br>振华HG850W 600<br>DDR4 REG ECC三星 2133 8G×4 700<br>追风者PK620PC 600<br><a href="https://pinpai.smzdm.com/1699/">英特尔</a>X710 四光口 400<br>金钱豹4U5</p>
+<p>总价 4000多</p>
+</blockquote>
+<ul>
+<li><strong>MINI ITX文件服务器</strong>的truenas配置：</li>
+</ul>
+<blockquote>
+<p>CPU E3-1235LV5 311<br>主板 永擎C236WSI 1565<br>内存 <a href="https://pinpai.smzdm.com/1745/">金士顿</a>纯 ECC DDR8Gx2 1200<br>显卡 核显 0<br>系统硬盘 影驰蘸酱60g 110<br>散热 手镰刀十手 100<br>机箱 国产6盘位NAS机箱 370<br>电源 海韵SSP-300SUG 455<br>网卡 Mellanox X2+3米SFP光纤网线23<br>合计 4344</p>
+</blockquote>
+<ul>
+<li>某<strong>家用主服务器</strong></li>
+</ul>
+<blockquote>
+<p>主板：超微X10SRL-F C612, 8个内存插槽，4个pcie3.0x8，2个pcie3.0x4，1个pcie2.0x4，10个sata3.0 1200元带散热器<br>内存：8x16G 纯ECC 三星 ddr4 2133 3200元<br>CPU：e5 2650L v3 12核24线程，低压版里面性能比较不错的 460元<br>网卡：超微X540-t2 双口10Gb 2块 330元<br>总价5300附近</p>
+</blockquote>
+<ul>
+<li><strong>便宜的</strong></li>
+</ul>
+<blockquote>
+<p>主板：寨板x99(实测好像是c612,可以上regecc)，1个pcie3.0x16，1个pcie3.0x8，1个pcie2.0x4，1个pcie3.0x1，9个sata3.0，390元<br>内存：4x16G REG ECC 三星 ddr4 2133 780元<br>CPU：e5 2650L v3 460元<br>网卡：BCM 57840S 双口10Gb 325元<br>总价：2000元附近</p>
+</blockquote>
+<h1 id="软件："><a href="#软件：" class="headerlink" title="软件："></a>软件：</h1><p><del>UNRaid / 黑裙 / TrueNAS ?</del></p>
+<p>TrueNAS</p>
+<p>也在考虑windows server</p>
+]]></content>
+      <categories>
+        <category>持续更新</category>
+      </categories>
+      <tags>
+        <tag>NAS</tag>
       </tags>
   </entry>
   <entry>
