@@ -20,28 +20,28 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"safghub.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.7.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="ABAQUS建模如何施加预应力(残余应力)ABAQUS模拟预应力筋的方法">
+<meta name="description" content="写在前面：RT 502020151615(cqj055)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="有限元学习笔记">
-<meta property="og:url" content="https://safghub.github.io/2021/09/11/%E6%9C%89%E9%99%90%E5%85%83%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:title" content="白嫖的正确姿势">
+<meta property="og:url" content="https://safghub.github.io/2022/02/24/9-%E7%99%BD%E5%AB%96%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/index.html">
 <meta property="og:site_name" content="Yut&#39;s Blog">
-<meta property="og:description" content="ABAQUS建模如何施加预应力(残余应力)ABAQUS模拟预应力筋的方法">
+<meta property="og:description" content="写在前面：RT 502020151615(cqj055)">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-09-11T03:13:45.000Z">
-<meta property="article:modified_time" content="2022-03-03T08:28:40.998Z">
+<meta property="article:published_time" content="2022-02-24T12:08:08.000Z">
+<meta property="article:modified_time" content="2022-03-02T06:35:18.929Z">
 <meta property="article:author" content="yut">
-<meta property="article:tag" content="有限元学习">
+<meta property="article:tag" content="如何白嫖">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://safghub.github.io/2021/09/11/%E6%9C%89%E9%99%90%E5%85%83%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+<link rel="canonical" href="https://safghub.github.io/2022/02/24/9-%E7%99%BD%E5%AB%96%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://safghub.github.io/2021/09/11/%E6%9C%89%E9%99%90%E5%85%83%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/","path":"2021/09/11/有限元学习笔记/","title":"有限元学习笔记"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://safghub.github.io/2022/02/24/9-%E7%99%BD%E5%AB%96%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/","path":"2022/02/24/9-白嫖的正确姿势/","title":"白嫖的正确姿势"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>有限元学习笔记 | Yut's Blog</title>
+<title>白嫖的正确姿势 | Yut's Blog</title>
   
 
 
@@ -215,7 +215,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://safghub.github.io/2021/09/11/%E6%9C%89%E9%99%90%E5%85%83%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+    <link itemprop="mainEntityOfPage" href="https://safghub.github.io/2022/02/24/9-%E7%99%BD%E5%AB%96%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -228,7 +228,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          有限元学习笔记
+          白嫖的正确姿势
         </h1>
 
         <div class="post-meta-container">
@@ -239,15 +239,24 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2021-09-11 11:13:45" itemprop="dateCreated datePublished" datetime="2021-09-11T11:13:45+08:00">2021-09-11</time>
+      <time title="创建时间：2022-02-24 20:08:08" itemprop="dateCreated datePublished" datetime="2022-02-24T20:08:08+08:00">2022-02-24</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2022-03-03 16:28:40" itemprop="dateModified" datetime="2022-03-03T16:28:40+08:00">2022-03-03</time>
+        <time title="修改时间：2022-03-02 14:35:18" itemprop="dateModified" datetime="2022-03-02T14:35:18+08:00">2022-03-02</time>
       </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/" itemprop="url" rel="index"><span itemprop="name">持续更新</span></a>
+        </span>
+    </span>
 
   
     <span class="post-meta-break"></span>
@@ -256,7 +265,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>36</span>
+      <span>1.4k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -274,8 +283,19 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <span id="more"></span>
-<p><a target="_blank" rel="noopener" href="http://www.doczj.com/doc/1638af390b1c59eef8c7b46a-3.html">ABAQUS建模如何施加预应力(残余应力)</a><br><a target="_blank" rel="noopener" href="http://www.doczj.com/doc/51aaf84b2b160b4e767fcff9.html">ABAQUS模拟预应力筋的方法</a></p>
+        <p><strong>写在前面：</strong>RT</p>
+<p>502020151615(cqj055) </p>
+<span id="more"></span>
+
+<p>SCI<br><a target="_blank" rel="noopener" href="https://sci-hub.se/">https://sci-hub.se/</a><br><a target="_blank" rel="noopener" href="https://sci-hub.ru/">https://sci-hub.ru/</a></p>
+<p>第一个是 Crossref 元数据。这个巨量的数据库通过 DOIs 索引研究论文，并提供论文作者、发表年份、标题和其他相关信息的元数据。该数据库包含超过 1.2 亿条记录及 API，用户可以通过 torrents 下载。网站地址：<a target="_blank" rel="noopener" href="https://www.crossref.org/">https://www.crossref.org/</a><br>第二个是 General Index。该数据库可以索引到 1.07 亿篇学术论文。网站地址：<a target="_blank" rel="noopener" href="https://archive.org/details/GeneralIndex">https://archive.org/details/GeneralIndex</a><br>第三个是 OpenCitations Corpus。这个免费开放的数据库提供了互引论文的相关信息。网站地址：<a target="_blank" rel="noopener" href="https://opencitations.net/corpus">https://opencitations.net/corpus</a><br>第四个是 Scopus。该数据库虽然不是免费的，但有免费访问的科学期刊信息表，用户在注册后可以下载。网站地址：<a target="_blank" rel="noopener" href="https://www.scopus.com/sources.uri?zone=TopNavBar&amp;origin=searchbasic">https://www.scopus.com/sources.uri?zone=TopNavBar&amp;origin=searchbasic</a><br>第五个是 Scimago Journal &amp; Country Rank。这是一个免费访问的数据库，提供了科学期刊论文相关的内容。网站地址：<a target="_blank" rel="noopener" href="https://www.scimagojr.com/">https://www.scimagojr.com/</a></p>
+<p>爱科学：<a target="_blank" rel="noopener" href="https://www.iikx.com/">https://www.iikx.com/</a></p>
+<p>一、无敌全能综合导航站<br>1.虫部落（聚合搜索平台）<br><a target="_blank" rel="noopener" href="https://search.chongbuluo.com/">https://search.chongbuluo.com</a><br>2.科塔学术（专业学术导航）<br><a target="_blank" rel="noopener" href="https://site.sciping.com/">https://site.sciping.com</a><br>3.码力全开（设计资源导航）<br><a target="_blank" rel="noopener" href="https://design.maliquankai.com/">https://design.maliquankai.com</a><br>4.SeeSeed（设计资源导航2）<br><a target="_blank" rel="noopener" href="https://www.seeseed.com/">https://www.seeseed.com</a><br>5.书享家（电子书资源导航）<br><a target="_blank" rel="noopener" href="http://shuxiangjia.cn/">http://shuxiangjia.cn</a><br>6.HiPPTer（PPT资源导航）<br><a target="_blank" rel="noopener" href="https://www.hippter.com/">https://www.hippter.com</a></p>
+<blockquote>
+<p>其他</p>
+</blockquote>
+<p>阿虚同学： <a target="_blank" rel="noopener" href="http://axutongxue.com/">http://axutongxue.com/</a><br>好网站不私藏：<a target="_blank" rel="noopener" href="https://www.207788.xyz/">https://www.207788.xyz/</a></p>
+<p>壁纸：<a target="_blank" rel="noopener" href="https://wallhaven.cc/">https://wallhaven.cc/</a><br>软件：<a target="_blank" rel="noopener" href="https://www.ghxi.com/">https://www.ghxi.com</a><br>收藏夹：<a target="_blank" rel="noopener" href="https://spcqwserdvymm.com.vika.cn/share/shryNwH3HRgvzMTaZVAGx/fodkuzz5eaw0w">https://spcqwserdvymm.com.vika.cn/share/shryNwH3HRgvzMTaZVAGx/fodkuzz5eaw0w</a><br>图片，视频素材：<a target="_blank" rel="noopener" href="https://www.pexels.com/zh-cn">https://www.pexels.com/zh-cn</a><br>Pixabay：<a target="_blank" rel="noopener" href="https://pixabay.com/zh/">https://pixabay.com/zh/</a><br>设计百宝箱：<a target="_blank" rel="noopener" href="http://www.shejibox.cn/">http://www.shejibox.cn/</a><br>seeseed：<a target="_blank" rel="noopener" href="https://www.seeseed.com/">https://www.seeseed.com/</a><br>优设导航：<a target="_blank" rel="noopener" href="https://hao.uisdc.com/">https://hao.uisdc.com/</a><br>编程导航：<a target="_blank" rel="noopener" href="https://www.code-nav.cn/">https://www.code-nav.cn/</a><br>HiPPTer：<a target="_blank" rel="noopener" href="http://www.hippter.com/">http://www.hippter.com/</a><br>淘声网：<a target="_blank" rel="noopener" href="https://www.tosound.com/">https://www.tosound.com/</a><br>熊猫搜书：<a target="_blank" rel="noopener" href="https://xmsoushu.com/">https://xmsoushu.com/</a><br>LKs的网站推荐：<a target="_blank" rel="noopener" href="https://xiangjianan.gitee.io/lks/">https://xiangjianan.gitee.io/lks/</a> </p>
 
     </div>
 
@@ -285,20 +305,20 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E6%9C%89%E9%99%90%E5%85%83%E5%AD%A6%E4%B9%A0/" rel="tag"># 有限元学习</a>
+              <a href="/tags/%E5%A6%82%E4%BD%95%E7%99%BD%E5%AB%96/" rel="tag"># 如何白嫖</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/09/01/%E5%90%83%E5%90%83%E5%90%83_%E7%AC%94%E8%AE%B0/" rel="prev" title="吃吃吃笔记">
-                  <i class="fa fa-chevron-left"></i> 吃吃吃笔记
+                <a href="/2022/01/01/8-2022%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%A4%A9/" rel="prev" title="2022年第一天">
+                  <i class="fa fa-chevron-left"></i> 2022年第一天
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/09/13/%E6%A1%83%E6%A1%83%E6%88%90%E9%95%BF%E7%AC%94%E8%AE%B0/" rel="next" title="桃桃成长笔记">
-                  桃桃成长笔记 <i class="fa fa-chevron-right"></i>
+                <a href="/2022/02/28/10-%E8%AE%B0%E5%BD%95%EF%BC%9A%E5%86%8D%E6%94%92%E4%B8%80%E5%8F%B0NAS/" rel="next" title="再攒一台NAS">
+                  再攒一台NAS <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
