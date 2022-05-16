@@ -1,6 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>再攒一台NAS</title>
+    <url>/2022/02/28/10-%E8%AE%B0%E5%BD%95%EF%BC%9A%E5%86%8D%E6%94%92%E4%B8%80%E5%8F%B0NAS/</url>
+    <content><![CDATA[<p><strong>写在前面：</strong>2022年2月最后一天，心里抑制不住地冒出了再攒一台NAS的想法。如果有两台，那么就可以有一台稳定保存数据，另一台用于折腾。假如想法付诸实践了，后续会持续更新的……</p>
+<span id="more"></span>
+
+<h1 id="硬件："><a href="#硬件：" class="headerlink" title="硬件："></a>硬件：</h1><blockquote>
+<p><del>低功耗为主 / 性能为主 ?</del>    </p>
+<p>稳定为主！</p>
+<p><del>Plex / KODI ?</del></p>
+<p>这种事情留给另一台做吧。</p>
+<p>NAS机箱 / 普通台式机箱 ？</p>
+<p>4T / 8T ?</p>
+<p>犹豫ing~</p>
+</blockquote>
+<h2 id="内存："><a href="#内存：" class="headerlink" title="内存："></a><strong>内存</strong>：</h2><p>1T数据需配1G内存，务必支持ECC。</p>
+<h2 id="主板："><a href="#主板：" class="headerlink" title="主板："></a><strong>主板</strong>：</h2><p>服务器主板 或 <a href="https://www.smzdm.com/fenlei/gongzuozhan/">工作站</a>主板，以保证 扩展性，稳定性，还有ECC的支持，带IPMI的主板优先推荐。</p>
+<blockquote>
+<p>超微（Supermicro）（优先推荐，价格也更高）</p>
+<p>永擎（ASRock Rack）（自古那啥出）</p>
+<p>ITX主板：永擎 C236M WS</p>
+<p>MATX主板：X11SSM-F（支持E3-1200V5 、V6，具体如 E3-1240L v5，4核8线程，25W tdp，无集显；E3-1260LV5 4核8线程 45Wtdp，约为i3 8100的性能，无集显）</p>
+</blockquote>
+<h2 id="CPU："><a href="#CPU：" class="headerlink" title="CPU："></a><strong>CPU</strong>：</h2><p>不建议AMD</p>
+<blockquote>
+<p>推荐E5，因为扩展性更好，主要原因还是支持扩展更多的RAM。Haswell/Broadwell 以及老一点的E3 最多用 32GB RAM; Skylake 架构 则最多64GB RAM; Coffee Lake 能高达 128 GB RAM。</p>
+<p>轻度用户：G4400、G4600、G5500都是推荐的，更重要的是这些七代以上的U核显可以完全支持硬解，功耗还低，非常适合家庭入门用户。2核4线程，我亲测G4560集显下，玩<a href="https://pinpai.smzdm.com/42625/">英雄联盟</a>低画质可以稳定80帧附近</p>
+<p>中度用户：i3 6300和i3 8300，适合用一些jails或玩虚拟机的用户，4核心是必要的，前面如奔腾G4400只有2核，4核心在多口万兆、解码、虚拟机、搞AIO方面可以胜任</p>
+<p>重度用户：此时i5、i7等已经不支持ECC了，故而只能用E3、E5、W的至强CPU，通常是6核心起步，但要注意一般不带集显，要集显的需要挑型号。</p>
+<p>发烧用户：Xeon-D、AMD Epyc…</p>
+</blockquote>
+<h2 id="电源："><a href="#电源：" class="headerlink" title="电源："></a><strong>电源</strong>：</h2><p>80+ 金牌规格要比Corsair RM更好的电源，包括供电的线材等等，质量一定要好的。</p>
+<blockquote>
+<p>计算功耗：除了CPU内存主板万兆网卡等功耗<br>硬盘功耗需要特别注意瓦数：单个硬盘启动时瞬时功耗一般都超过20W，但都小于30W，建议计算的时候按照30W计算，以保证冗余</p>
+</blockquote>
+<h2 id="系统盘："><a href="#系统盘：" class="headerlink" title="系统盘："></a><strong>系统盘</strong>：</h2><p>16G起步，更推荐120G的sata或M2的SSD，推荐是组Mirror，不过不组似乎也没关系，需要把系统配置导出保存好，挖一挂了恢复也容易</p>
+<h2 id="网卡："><a href="#网卡：" class="headerlink" title="网卡："></a><strong>网卡</strong>：</h2><p>一般主板都有双网口，推荐I210、I350，更多的是自己加一个10G网卡，推荐：Chelsio，实际可选的应该还有一些</p>
+<h2 id="固态："><a href="#固态：" class="headerlink" title="固态："></a><strong>固态</strong>：</h2><p>待深入了解。</p>
+<h2 id="Raid："><a href="#Raid：" class="headerlink" title="Raid："></a><strong>Raid</strong>：</h2><p>raid z2 + 双NAS + 冷备份 + PC自身   </p>
+<blockquote>
+<p>为什么执着于数据安全？因为在多个重要时刻数据挂过（有手抖，也有遭遇突然断电这种意外）。</p>
+</blockquote>
+<h2 id="配置方案参考："><a href="#配置方案参考：" class="headerlink" title="配置方案参考："></a><strong>配置方案参考</strong>：</h2><p>抄作业时间</p>
+<ul>
+<li><strong>万兆工作室</strong>4K视频剪辑用truenas配置：</li>
+</ul>
+<blockquote>
+<p>E5-2618LV3 300<br>超微X10SRL-F 2000<br>振华HG850W 600<br>DDR4 REG ECC三星 2133 8G×4 700<br>追风者PK620PC 600<br><a href="https://pinpai.smzdm.com/1699/">英特尔</a>X710 四光口 400<br>金钱豹4U5</p>
+<p>总价 4000多</p>
+</blockquote>
+<ul>
+<li><strong>MINI ITX文件服务器</strong>的truenas配置：</li>
+</ul>
+<blockquote>
+<p>CPU E3-1235LV5 311<br>主板 永擎C236WSI 1565<br>内存 <a href="https://pinpai.smzdm.com/1745/">金士顿</a>纯 ECC DDR8Gx2 1200<br>显卡 核显 0<br>系统硬盘 影驰蘸酱60g 110<br>散热 手镰刀十手 100<br>机箱 国产6盘位NAS机箱 370<br>电源 海韵SSP-300SUG 455<br>网卡 Mellanox X2+3米SFP光纤网线23<br>合计 4344</p>
+</blockquote>
+<ul>
+<li>某<strong>家用主服务器</strong></li>
+</ul>
+<blockquote>
+<p>主板：超微X10SRL-F C612, 8个内存插槽，4个pcie3.0x8，2个pcie3.0x4，1个pcie2.0x4，10个sata3.0 1200元带散热器<br>内存：8x16G 纯ECC 三星 ddr4 2133 3200元<br>CPU：e5 2650L v3 12核24线程，低压版里面性能比较不错的 460元<br>网卡：超微X540-t2 双口10Gb 2块 330元<br>总价5300附近</p>
+</blockquote>
+<ul>
+<li><strong>便宜的</strong></li>
+</ul>
+<blockquote>
+<p>主板：寨板x99(实测好像是c612,可以上regecc)，1个pcie3.0x16，1个pcie3.0x8，1个pcie2.0x4，1个pcie3.0x1，9个sata3.0，390元<br>内存：4x16G REG ECC 三星 ddr4 2133 780元<br>CPU：e5 2650L v3 460元<br>网卡：BCM 57840S 双口10Gb 325元<br>总价：2000元附近</p>
+</blockquote>
+<h1 id="软件："><a href="#软件：" class="headerlink" title="软件："></a>软件：</h1><p><del>UNRaid / 黑裙 / TrueNAS ?</del></p>
+<p>TrueNAS</p>
+<p>也在考虑windows server</p>
+]]></content>
+      <categories>
+        <category>持续更新</category>
+      </categories>
+      <tags>
+        <tag>NAS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>多支座模拟</title>
     <url>/2022/03/30/11-civil%E5%A4%9A%E6%94%AF%E5%BA%A7%E6%A8%A1%E6%8B%9F/</url>
     <content><![CDATA[<p><strong>写在前面：</strong>持续更新……</p>
@@ -85,126 +164,6 @@
       </categories>
       <tags>
         <tag>civil</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>test--PDF插件</title>
-    <url>/2021/08/30/3-pdf%E6%8F%92%E4%BB%B6/</url>
-    <content><![CDATA[<p>RT</p>
-<span id="more"></span>
-
-<div class="pdf-container" data-target="https://dududou.oss-cn-beijing.aliyuncs.com/PDF/test.pdf" data-height="500px"></div>
-<p><strong><center> 以上是PDF插件 </center></strong></p>
-<hr>
-<center> 以下是百度网盘试验 </center> 
-
-<p>  <a href="https://pan.baidu.com/s/1--j1Dqq4VPKjV-iBOWhAhg">桥梁荟</a>  <a href="https://pan.baidu.com/s/1--j1Dqq4VPKjV-iBOWhAhg">桥梁荟</a>  <a href="https://pan.baidu.com/s/1--j1Dqq4VPKjV-iBOWhAhg">桥梁荟</a><br>提取码：u9sf</p>
-<table>
-<thead>
-<tr>
-<th align="center">链接</th>
-<th align="center">提取码</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><a href="https://pan.baidu.com/s/1--j1Dqq4VPKjV-iBOWhAhg">桥梁荟1</a></td>
-<td align="center">u9sf</td>
-</tr>
-<tr>
-<td align="center"><a href="https://pan.baidu.com/s/1--j1Dqq4VPKjV-iBOWhAhg">桥梁荟2</a></td>
-<td align="center">u9sf</td>
-</tr>
-<tr>
-<td align="center"><a href="https://pan.baidu.com/s/1--j1Dqq4VPKjV-iBOWhAhg">桥梁荟3</a></td>
-<td align="center">u9sf</td>
-</tr>
-<tr>
-<td align="center"><a href="https://pan.baidu.com/s/1--j1Dqq4VPKjV-iBOWhAhg">桥梁荟4</a></td>
-<td align="center">u9sf</td>
-</tr>
-</tbody></table>
-]]></content>
-      <tags>
-        <tag>已解决</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>再攒一台NAS</title>
-    <url>/2022/02/28/10-%E8%AE%B0%E5%BD%95%EF%BC%9A%E5%86%8D%E6%94%92%E4%B8%80%E5%8F%B0NAS/</url>
-    <content><![CDATA[<p><strong>写在前面：</strong>2022年2月最后一天，心里抑制不住地冒出了再攒一台NAS的想法。如果有两台，那么就可以有一台稳定保存数据，另一台用于折腾。假如想法付诸实践了，后续会持续更新的……</p>
-<span id="more"></span>
-
-<h1 id="硬件："><a href="#硬件：" class="headerlink" title="硬件："></a>硬件：</h1><blockquote>
-<p><del>低功耗为主 / 性能为主 ?</del>    </p>
-<p>稳定为主！</p>
-<p><del>Plex / KODI ?</del></p>
-<p>这种事情留给另一台做吧。</p>
-<p>NAS机箱 / 普通台式机箱 ？</p>
-<p>4T / 8T ?</p>
-<p>犹豫ing~</p>
-</blockquote>
-<h2 id="内存："><a href="#内存：" class="headerlink" title="内存："></a><strong>内存</strong>：</h2><p>1T数据需配1G内存，务必支持ECC。</p>
-<h2 id="主板："><a href="#主板：" class="headerlink" title="主板："></a><strong>主板</strong>：</h2><p>服务器主板 或 <a href="https://www.smzdm.com/fenlei/gongzuozhan/">工作站</a>主板，以保证 扩展性，稳定性，还有ECC的支持，带IPMI的主板优先推荐。</p>
-<blockquote>
-<p>超微（Supermicro）（优先推荐，价格也更高）</p>
-<p>永擎（ASRock Rack）（自古那啥出）</p>
-<p>ITX主板：永擎 C236M WS</p>
-<p>MATX主板：X11SSM-F（支持E3-1200V5 、V6，具体如 E3-1240L v5，4核8线程，25W tdp，无集显；E3-1260LV5 4核8线程 45Wtdp，约为i3 8100的性能，无集显）</p>
-</blockquote>
-<h2 id="CPU："><a href="#CPU：" class="headerlink" title="CPU："></a><strong>CPU</strong>：</h2><p>不建议AMD</p>
-<blockquote>
-<p>推荐E5，因为扩展性更好，主要原因还是支持扩展更多的RAM。Haswell/Broadwell 以及老一点的E3 最多用 32GB RAM; Skylake 架构 则最多64GB RAM; Coffee Lake 能高达 128 GB RAM。</p>
-<p>轻度用户：G4400、G4600、G5500都是推荐的，更重要的是这些七代以上的U核显可以完全支持硬解，功耗还低，非常适合家庭入门用户。2核4线程，我亲测G4560集显下，玩<a href="https://pinpai.smzdm.com/42625/">英雄联盟</a>低画质可以稳定80帧附近</p>
-<p>中度用户：i3 6300和i3 8300，适合用一些jails或玩虚拟机的用户，4核心是必要的，前面如奔腾G4400只有2核，4核心在多口万兆、解码、虚拟机、搞AIO方面可以胜任</p>
-<p>重度用户：此时i5、i7等已经不支持ECC了，故而只能用E3、E5、W的至强CPU，通常是6核心起步，但要注意一般不带集显，要集显的需要挑型号。</p>
-<p>发烧用户：Xeon-D、AMD Epyc…</p>
-</blockquote>
-<h2 id="电源："><a href="#电源：" class="headerlink" title="电源："></a><strong>电源</strong>：</h2><p>80+ 金牌规格要比Corsair RM更好的电源，包括供电的线材等等，质量一定要好的。</p>
-<blockquote>
-<p>计算功耗：除了CPU内存主板万兆网卡等功耗<br>硬盘功耗需要特别注意瓦数：单个硬盘启动时瞬时功耗一般都超过20W，但都小于30W，建议计算的时候按照30W计算，以保证冗余</p>
-</blockquote>
-<h2 id="系统盘："><a href="#系统盘：" class="headerlink" title="系统盘："></a><strong>系统盘</strong>：</h2><p>16G起步，更推荐120G的sata或M2的SSD，推荐是组Mirror，不过不组似乎也没关系，需要把系统配置导出保存好，挖一挂了恢复也容易</p>
-<h2 id="网卡："><a href="#网卡：" class="headerlink" title="网卡："></a><strong>网卡</strong>：</h2><p>一般主板都有双网口，推荐I210、I350，更多的是自己加一个10G网卡，推荐：Chelsio，实际可选的应该还有一些</p>
-<h2 id="固态："><a href="#固态：" class="headerlink" title="固态："></a><strong>固态</strong>：</h2><p>待深入了解。</p>
-<h2 id="Raid："><a href="#Raid：" class="headerlink" title="Raid："></a><strong>Raid</strong>：</h2><p>raid z2 + 双NAS + 冷备份 + PC自身   </p>
-<blockquote>
-<p>为什么执着于数据安全？因为在多个重要时刻数据挂过（有手抖，也有遭遇突然断电这种意外）。</p>
-</blockquote>
-<h2 id="配置方案参考："><a href="#配置方案参考：" class="headerlink" title="配置方案参考："></a><strong>配置方案参考</strong>：</h2><p>抄作业时间</p>
-<ul>
-<li><strong>万兆工作室</strong>4K视频剪辑用truenas配置：</li>
-</ul>
-<blockquote>
-<p>E5-2618LV3 300<br>超微X10SRL-F 2000<br>振华HG850W 600<br>DDR4 REG ECC三星 2133 8G×4 700<br>追风者PK620PC 600<br><a href="https://pinpai.smzdm.com/1699/">英特尔</a>X710 四光口 400<br>金钱豹4U5</p>
-<p>总价 4000多</p>
-</blockquote>
-<ul>
-<li><strong>MINI ITX文件服务器</strong>的truenas配置：</li>
-</ul>
-<blockquote>
-<p>CPU E3-1235LV5 311<br>主板 永擎C236WSI 1565<br>内存 <a href="https://pinpai.smzdm.com/1745/">金士顿</a>纯 ECC DDR8Gx2 1200<br>显卡 核显 0<br>系统硬盘 影驰蘸酱60g 110<br>散热 手镰刀十手 100<br>机箱 国产6盘位NAS机箱 370<br>电源 海韵SSP-300SUG 455<br>网卡 Mellanox X2+3米SFP光纤网线23<br>合计 4344</p>
-</blockquote>
-<ul>
-<li>某<strong>家用主服务器</strong></li>
-</ul>
-<blockquote>
-<p>主板：超微X10SRL-F C612, 8个内存插槽，4个pcie3.0x8，2个pcie3.0x4，1个pcie2.0x4，10个sata3.0 1200元带散热器<br>内存：8x16G 纯ECC 三星 ddr4 2133 3200元<br>CPU：e5 2650L v3 12核24线程，低压版里面性能比较不错的 460元<br>网卡：超微X540-t2 双口10Gb 2块 330元<br>总价5300附近</p>
-</blockquote>
-<ul>
-<li><strong>便宜的</strong></li>
-</ul>
-<blockquote>
-<p>主板：寨板x99(实测好像是c612,可以上regecc)，1个pcie3.0x16，1个pcie3.0x8，1个pcie2.0x4，1个pcie3.0x1，9个sata3.0，390元<br>内存：4x16G REG ECC 三星 ddr4 2133 780元<br>CPU：e5 2650L v3 460元<br>网卡：BCM 57840S 双口10Gb 325元<br>总价：2000元附近</p>
-</blockquote>
-<h1 id="软件："><a href="#软件：" class="headerlink" title="软件："></a>软件：</h1><p><del>UNRaid / 黑裙 / TrueNAS ?</del></p>
-<p>TrueNAS</p>
-<p>也在考虑windows server</p>
-]]></content>
-      <categories>
-        <category>持续更新</category>
-      </categories>
-      <tags>
-        <tag>NAS</tag>
       </tags>
   </entry>
   <entry>
@@ -329,17 +288,44 @@
       </tags>
   </entry>
   <entry>
-    <title>电算笔记</title>
-    <url>/2021/09/11/5-%E6%9C%89%E9%99%90%E5%85%83%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<span id="more"></span>
+    <title>test--PDF插件</title>
+    <url>/2021/08/30/3-pdf%E6%8F%92%E4%BB%B6/</url>
+    <content><![CDATA[<p>RT</p>
+<span id="more"></span>
 
-<h1 id="ABAQUS"><a href="#ABAQUS" class="headerlink" title="ABAQUS"></a>ABAQUS</h1><p><a href="http://www.doczj.com/doc/1638af390b1c59eef8c7b46a-3.html">ABAQUS建模如何施加预应力(残余应力)</a><br><a href="http://www.doczj.com/doc/51aaf84b2b160b4e767fcff9.html">ABAQUS模拟预应力筋的方法</a></p>
-<p><a href="https://blog.csdn.net/weixin_39811386/article/details/110558791">abaqus帮助文档_Abaqus 屈曲特征值求解 非线性屈曲分析</a></p>
-<h1 id="midas-civil"><a href="#midas-civil" class="headerlink" title="midas civil"></a>midas civil</h1><p><a href="https://www.aliyundrive.com/s/5gtdYepMnL8">桥梁荟</a>  :提取码: w03w 。</p>
-<p><a href="https://www.doc88.com/p-3495358132081.html">MIDAS多支座的模拟方法</a></p>
-<h1 id="midas-FEA-FEA-NX"><a href="#midas-FEA-FEA-NX" class="headerlink" title="midas FEA / FEA NX"></a>midas FEA / FEA NX</h1><h1 id="midas-CDN"><a href="#midas-CDN" class="headerlink" title="midas CDN"></a>midas CDN</h1><h1 id="matlab"><a href="#matlab" class="headerlink" title="matlab"></a>matlab</h1>]]></content>
+<div class="pdf-container" data-target="https://dududou.oss-cn-beijing.aliyuncs.com/PDF/test.pdf" data-height="500px"></div>
+<p><strong><center> 以上是PDF插件 </center></strong></p>
+<hr>
+<center> 以下是百度网盘试验 </center> 
+
+<p>  <a href="https://pan.baidu.com/s/1--j1Dqq4VPKjV-iBOWhAhg">桥梁荟</a>  <a href="https://pan.baidu.com/s/1--j1Dqq4VPKjV-iBOWhAhg">桥梁荟</a>  <a href="https://pan.baidu.com/s/1--j1Dqq4VPKjV-iBOWhAhg">桥梁荟</a><br>提取码：u9sf</p>
+<table>
+<thead>
+<tr>
+<th align="center">链接</th>
+<th align="center">提取码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><a href="https://pan.baidu.com/s/1--j1Dqq4VPKjV-iBOWhAhg">桥梁荟1</a></td>
+<td align="center">u9sf</td>
+</tr>
+<tr>
+<td align="center"><a href="https://pan.baidu.com/s/1--j1Dqq4VPKjV-iBOWhAhg">桥梁荟2</a></td>
+<td align="center">u9sf</td>
+</tr>
+<tr>
+<td align="center"><a href="https://pan.baidu.com/s/1--j1Dqq4VPKjV-iBOWhAhg">桥梁荟3</a></td>
+<td align="center">u9sf</td>
+</tr>
+<tr>
+<td align="center"><a href="https://pan.baidu.com/s/1--j1Dqq4VPKjV-iBOWhAhg">桥梁荟4</a></td>
+<td align="center">u9sf</td>
+</tr>
+</tbody></table>
+]]></content>
       <tags>
-        <tag>电算学习</tag>
+        <tag>已解决</tag>
       </tags>
   </entry>
   <entry>
@@ -480,19 +466,17 @@
       </tags>
   </entry>
   <entry>
-    <title>2022年第一天</title>
-    <url>/2022/01/01/8-2022%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%A4%A9/</url>
-    <content><![CDATA[<p>现在是2022年1月1日早上8点，今早起来洗了个澡，发了几条元旦祝福消息，现在到了办公室准备搬砖。迎新辞旧，这是新的一年的第一天，祝大家元旦快乐。</p>
-<span id="more"></span>
+    <title>电算笔记</title>
+    <url>/2021/09/11/5-%E6%9C%89%E9%99%90%E5%85%83%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<span id="more"></span>
 
-<p>2021年，我工作中至少大概参与了31件事，为此有31个单独的一级文件夹。<br>2021年，我总体是以摸鱼为主，个人的成长为辅的，2021年整年最大的事件莫过于做下2022年结婚这个决定，虽然回想过程很简短，但确实是一个很重大很慎重很认真的决定。<br>2021年，我到过云南不少地州，有一看就很有钱的地方，有一看就很穷的地方。在一个小范围内，大家都差不多，在一个大范围内，人与人之间的差距确实很大。<br>2021年，我接触过一些危旧桥梁相关的项目：竣工、监控、评估、设计、施工。在专业上，虽有快速大面积的覆盖，但浅尝辄止。从社会责任上，我认为是一件好事，修桥补桥，应该是一件利于社会利于人民的事情。<br>2021年，我的名字出现在了几处地方，有需要本人签字的，有不需要的。希望以后可以出现在更好的地方。<br>2021年，我在一个项目从9.15待到12.31，本同时包含一些其他工作，但是几乎没有开展，希望2022能日拱一卒。</p>
-<p>希望2022年，自己厚积薄发；希望2022年，大家平安健康！</p>
-]]></content>
-      <categories>
-        <category>一时的情绪</category>
-      </categories>
+<h1 id="ABAQUS"><a href="#ABAQUS" class="headerlink" title="ABAQUS"></a>ABAQUS</h1><p><a href="http://www.doczj.com/doc/1638af390b1c59eef8c7b46a-3.html">ABAQUS建模如何施加预应力(残余应力)</a><br><a href="http://www.doczj.com/doc/51aaf84b2b160b4e767fcff9.html">ABAQUS模拟预应力筋的方法</a></p>
+<p><a href="https://blog.csdn.net/weixin_39811386/article/details/110558791">abaqus帮助文档_Abaqus 屈曲特征值求解 非线性屈曲分析</a></p>
+<h1 id="midas-civil"><a href="#midas-civil" class="headerlink" title="midas civil"></a>midas civil</h1><p><a href="https://www.aliyundrive.com/s/5gtdYepMnL8">桥梁荟</a>  :提取码: w03w 。</p>
+<p><a href="https://www.doc88.com/p-3495358132081.html">MIDAS多支座的模拟方法</a></p>
+<h1 id="midas-FEA-FEA-NX"><a href="#midas-FEA-FEA-NX" class="headerlink" title="midas FEA / FEA NX"></a>midas FEA / FEA NX</h1><h1 id="midas-CDN"><a href="#midas-CDN" class="headerlink" title="midas CDN"></a>midas CDN</h1><h1 id="matlab"><a href="#matlab" class="headerlink" title="matlab"></a>matlab</h1>]]></content>
       <tags>
-        <tag>节日快乐</tag>
+        <tag>电算学习</tag>
       </tags>
   </entry>
   <entry>
@@ -510,6 +494,22 @@
       </categories>
       <tags>
         <tag>关于网球的一切</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022年第一天</title>
+    <url>/2022/01/01/8-2022%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%A4%A9/</url>
+    <content><![CDATA[<p>现在是2022年1月1日早上8点，今早起来洗了个澡，发了几条元旦祝福消息，现在到了办公室准备搬砖。迎新辞旧，这是新的一年的第一天，祝大家元旦快乐。</p>
+<span id="more"></span>
+
+<p>2021年，我工作中至少大概参与了31件事，为此有31个单独的一级文件夹。<br>2021年，我总体是以摸鱼为主，个人的成长为辅的，2021年整年最大的事件莫过于做下2022年结婚这个决定，虽然回想过程很简短，但确实是一个很重大很慎重很认真的决定。<br>2021年，我到过云南不少地州，有一看就很有钱的地方，有一看就很穷的地方。在一个小范围内，大家都差不多，在一个大范围内，人与人之间的差距确实很大。<br>2021年，我接触过一些危旧桥梁相关的项目：竣工、监控、评估、设计、施工。在专业上，虽有快速大面积的覆盖，但浅尝辄止。从社会责任上，我认为是一件好事，修桥补桥，应该是一件利于社会利于人民的事情。<br>2021年，我的名字出现在了几处地方，有需要本人签字的，有不需要的。希望以后可以出现在更好的地方。<br>2021年，我在一个项目从9.15待到12.31，本同时包含一些其他工作，但是几乎没有开展，希望2022能日拱一卒。</p>
+<p>希望2022年，自己厚积薄发；希望2022年，大家平安健康！</p>
+]]></content>
+      <categories>
+        <category>一时的情绪</category>
+      </categories>
+      <tags>
+        <tag>节日快乐</tag>
       </tags>
   </entry>
   <entry>
