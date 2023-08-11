@@ -28,7 +28,7 @@
 <meta property="og:description" content="在word中通过VBA编写一些常用的函数，再利用快捷键激发，可以有效的提高写作的效率。以下分享个人通过网络收集，或者改造，或者自己录制后修改的代码，有需要的可以自取。因为已经记不清有些代码的出处了，如果有使用到你的代码，烦请告之添加引用说明或者我删除掉，谢谢！ 1.字体设置作用针对常用报告里英文采用Times New Roman字体，而全选文档设置后会导致引号变成难看的英文形式，故引号单独设置为宋">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-08-01T07:58:45.000Z">
-<meta property="article:modified_time" content="2023-08-01T07:58:53.221Z">
+<meta property="article:modified_time" content="2023-08-11T09:37:28.288Z">
 <meta property="article:author" content="yut">
 <meta property="article:tag" content="civil">
 <meta name="twitter:card" content="summary">
@@ -149,7 +149,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">1.字体设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E8%AE%BE%E7%BD%AE%E4%B8%8A%E4%B8%8B%E6%A0%87"><span class="nav-number">2.</span> <span class="nav-text">2. 设置上下标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E6%9B%BF%E6%8D%A2%E7%B2%98%E8%B4%B4%E7%9A%84%E5%86%85%E5%AE%B9"><span class="nav-number">3.</span> <span class="nav-text">3. 替换粘贴的内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E6%9B%BF%E6%8D%A2%E4%B8%AD%E6%96%87%E7%9A%84%E5%8D%95%E4%BD%8D"><span class="nav-number">4.</span> <span class="nav-text">4. 替换中文的单位</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E6%AE%B5%E8%90%BD%E7%BC%A9%E8%BF%9B%E5%A4%84%E7%90%86"><span class="nav-number">5.</span> <span class="nav-text">5. 段落缩进处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E7%B2%98%E8%B4%B4%E7%BA%AF%E6%96%87%E6%9C%AC"><span class="nav-number">6.</span> <span class="nav-text">6. 粘贴纯文本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E8%AE%BE%E7%BD%AE%E6%89%93%E5%BC%80%E6%96%87%E6%A1%A3%E7%9A%84%E9%BB%98%E8%AE%A4%E6%98%BE%E7%A4%BA%E6%AF%94%E4%BE%8B"><span class="nav-number">7.</span> <span class="nav-text">7.设置打开文档的默认显示比例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-%E8%AE%BE%E7%BD%AE%E6%AE%B5%E8%90%BD%E4%B8%8E%E4%B8%8B%E6%AE%B5%E5%90%8C%E9%A1%B5"><span class="nav-number">8.</span> <span class="nav-text">8. 设置段落与下段同页</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-%E8%A1%A8%E6%A0%BC%E8%BE%B9%E6%A1%86%E8%AE%BE%E7%BD%AE"><span class="nav-number">9.</span> <span class="nav-text">9. 表格边框设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E5%A4%A7%E5%B0%8F"><span class="nav-number">10.</span> <span class="nav-text">10.设置图片大小</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-%E5%85%B3%E4%BA%8E%E6%96%87%E6%A1%A3%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2%E7%9A%84%E8%AE%BE%E7%BD%AE"><span class="nav-number">11.</span> <span class="nav-text">11.关于文档背景颜色的设置</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">1.字体设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E8%AE%BE%E7%BD%AE%E4%B8%8A%E4%B8%8B%E6%A0%87"><span class="nav-number">2.</span> <span class="nav-text">2. 设置上下标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E6%9B%BF%E6%8D%A2%E7%B2%98%E8%B4%B4%E7%9A%84%E5%86%85%E5%AE%B9"><span class="nav-number">3.</span> <span class="nav-text">3. 替换粘贴的内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E6%9B%BF%E6%8D%A2%E4%B8%AD%E6%96%87%E7%9A%84%E5%8D%95%E4%BD%8D"><span class="nav-number">4.</span> <span class="nav-text">4. 替换中文的单位</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E6%AE%B5%E8%90%BD%E7%BC%A9%E8%BF%9B%E5%A4%84%E7%90%86"><span class="nav-number">5.</span> <span class="nav-text">5. 段落缩进处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E7%B2%98%E8%B4%B4%E7%BA%AF%E6%96%87%E6%9C%AC"><span class="nav-number">6.</span> <span class="nav-text">6. 粘贴纯文本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E8%AE%BE%E7%BD%AE%E6%89%93%E5%BC%80%E6%96%87%E6%A1%A3%E7%9A%84%E9%BB%98%E8%AE%A4%E6%98%BE%E7%A4%BA%E6%AF%94%E4%BE%8B"><span class="nav-number">7.</span> <span class="nav-text">7.设置打开文档的默认显示比例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-%E8%AE%BE%E7%BD%AE%E6%AE%B5%E8%90%BD%E4%B8%8E%E4%B8%8B%E6%AE%B5%E5%90%8C%E9%A1%B5"><span class="nav-number">8.</span> <span class="nav-text">8. 设置段落与下段同页</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-%E8%A1%A8%E6%A0%BC%E8%BE%B9%E6%A1%86%E8%AE%BE%E7%BD%AE"><span class="nav-number">9.</span> <span class="nav-text">9. 表格边框设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E5%A4%A7%E5%B0%8F"><span class="nav-number">10.</span> <span class="nav-text">10.设置图片大小</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-%E5%85%B3%E4%BA%8E%E6%96%87%E6%A1%A3%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2%E7%9A%84%E8%AE%BE%E7%BD%AE"><span class="nav-number">11.</span> <span class="nav-text">11.关于文档背景颜色的设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-%E8%AE%BE%E7%BD%AE%E9%A1%B5%E8%BE%B9%E8%B7%9D%EF%BC%8C%E8%A1%A8%E6%A0%BC%E5%AE%BD%E5%BA%A6100"><span class="nav-number">12.</span> <span class="nav-text">12.设置页边距，表格宽度100%</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-%E6%96%87%E5%AD%97%E6%9B%BF%E6%8D%A2"><span class="nav-number">13.</span> <span class="nav-text">13.文字替换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-word%E6%89%B9%E9%87%8F%E8%BD%ACPDF"><span class="nav-number">14.</span> <span class="nav-text">14.word批量转PDF</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -239,10 +239,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2023-08-01 15:58:45 / 修改时间：15:58:53" itemprop="dateCreated datePublished" datetime="2023-08-01T15:58:45+08:00">2023-08-01</time>
+      <time title="创建时间：2023-08-01 15:58:45" itemprop="dateCreated datePublished" datetime="2023-08-01T15:58:45+08:00">2023-08-01</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2023-08-11 17:37:28" itemprop="dateModified" datetime="2023-08-11T17:37:28+08:00">2023-08-11</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -260,14 +266,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>9.8k</span>
+      <span>12k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>9 分钟</span>
+      <span>11 分钟</span>
     </span>
 </div>
 
@@ -370,7 +376,23 @@
 <blockquote>
 <p>Sub 背景色取消()<br>    ActiveDocument.Background.Fill.Visible = msoFalse<br>End Sub</p>
 </blockquote>
-<p>————————————————<br>版权声明：本文为CSDN博主「erqie」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/erqie/article/details/128101183">https://blog.csdn.net/erqie/article/details/128101183</a></p>
+<h2 id="12-设置页边距，表格宽度100"><a href="#12-设置页边距，表格宽度100" class="headerlink" title="12.设置页边距，表格宽度100%"></a>12.设置页边距，表格宽度100%</h2><p>原因<br>同事问我能不能弄一个：</p>
+<p><strong>代码</strong></p>
+<blockquote>
+<p>Sub tablekuandu100()<br>   ActiveDocument.PageSetup.TopMargin = 70.825<br>   ActiveDocument.PageSetup.BottomMargin = 70.825<br>   ActiveDocument.PageSetup.LeftMargin = 70.825<br>   ActiveDocument.PageSetup.RightMargin = 70.825<br>    Dim tempTable As Table<br>    Application.ScreenUpdating = False</p>
+<p>‘判断文档是否被保护<br>    If ActiveDocument.ProtectionType = wdAllowOnlyFormFields Then<br>        MsgBox “文档已保护，此时不能选中多个表格！”<br>        Exit Sub<br>    End If<br>    ‘删除所有可编辑的区域<br>    ActiveDocument.DeleteAllEditableRanges wdEditorEveryone<br>    ‘添加可编辑区域<br>    For Each tempTable In ActiveDocument.Tables<br>        tempTable.Range.Editors.Add wdEditorEveryone<br>        tempTable.PreferredWidthType = wdPreferredWidthPercent<br>        tempTable.PreferredWidth = 100<br>    Next<br>    ‘选中所有可编辑区域<br>    ActiveDocument.SelectAllEditableRanges wdEditorEveryone<br>    ‘删除所有可编辑的区域<br>    ActiveDocument.DeleteAllEditableRanges wdEditorEveryone<br>    Application.ScreenUpdating = True<br>End Sub</p>
+</blockquote>
+<h2 id="13-文字替换"><a href="#13-文字替换" class="headerlink" title="13.文字替换"></a>13.文字替换</h2><p>原因<br>调整格式需要：</p>
+<p><strong>代码</strong></p>
+<blockquote>
+<p>Sub 描述整体替换()<br>With Selection.Find<br> .ClearFormatting<br> .Text = “)“<br> .Replacement.ClearFormatting<br> .Replacement.Text = “）”<br> .Execute Replace:=wdReplaceAll, Forward:=True, _<br> Wrap:=wdFindContinue<br>End With</p>
+<p> ‘数字、英文用Times,引号用宋体<br>  ActiveDocument.Content.Font.Name = “Times New Roman”<br>  Selection.Find.ClearFormatting<br>  Selection.Find.Replacement.ClearFormatting<br>  With Selection.Find<br>      .Text = “[“ &amp; ChrW(8220) &amp; ChrW(8221) &amp; “]”<br>      .Replacement.Text = “”<br>      .Forward = True<br>      .Wrap = wdFindContinue<br>      .Format = True<br>      .MatchCase = False<br>      .MatchWholeWord = False<br>      .MatchByte = False<br>      .MatchAllWordForms = False<br>      .MatchSoundsLike = False<br>      .MatchWildcards = True<br>      .Replacement.Font.Name = “宋体”<br>  End With<br>  Selection.Find.Execute Replace:=wdReplaceAll<br>End Sub</p>
+</blockquote>
+<h2 id="14-word批量转PDF"><a href="#14-word批量转PDF" class="headerlink" title="14.word批量转PDF"></a>14.word批量转PDF</h2><p>原因<br>打印机守护神需要：</p>
+<p><strong>代码</strong></p>
+<blockquote>
+<p>Sub Word2Pdf()<br>‘说明：将一整个文件夹的word转PDF，所以目录需要选择到文件夹。小YUT试过了，比批量打印快一些。<br>    Dim xIndex As String<br>    Dim xDlg As FileDialog<br>    Dim xFolder As Variant<br>    Dim xNewName As String<br>    Dim xFileName As String<br>    Set xDlg = Application.FileDialog(msoFileDialogFolderPicker)<br>    If xDlg.Show &lt;&gt; -1 Then Exit Sub<br>    xFolder = xDlg.SelectedItems(1) + “&quot;<br>    xFileName = Dir(xFolder &amp; “<em>.</em>“, vbNormal)<br>    While xFileName &lt;&gt; “”<br>        If ((Right(xFileName, 4)) &lt;&gt; “.doc” Or Right(xFileName, 4) &lt;&gt; “.docx”) Then<br>            xIndex = InStr(xFileName, “.”) + 1<br>            xNewName = Replace(xFileName, Mid(xFileName, xIndex), “pdf”)<br>            Documents.Open FileName:=xFolder &amp; xFileName, _<br>                ConfirmConversions:=False, ReadOnly:=False, AddToRecentFiles:=False, _<br>                PasswordDocument:=””, PasswordTemplate:=””, Revert:=False, _<br>                WritePasswordDocument:=””, WritePasswordTemplate:=””, Format:= _<br>                wdOpenFormatAuto, XMLTransform:=””<br>            ActiveDocument.ExportAsFixedFormat OutputFileName:=xFolder &amp; xNewName, _<br>                ExportFormat:=wdExportFormatPDF, OpenAfterExport:=False, OptimizeFor:= _<br>                wdExportOptimizeForPrint, Range:=wdExportAllDocument, From:=1, To:=1, _<br>                Item:=wdExportDocumentContent, IncludeDocProps:=True, KeepIRM:=True, _<br>                CreateBookmarks:=wdExportCreateNoBookmarks, DocStructureTags:=True, _<br>                BitmapMissingFonts:=True, UseISO19005_1:=False<br>            ActiveDocument.Save<br>            ActiveDocument.Close<br>        End If<br>        xFileName = Dir()<br>    Wend<br>End Sub</p>
+</blockquote>
 
     </div>
 

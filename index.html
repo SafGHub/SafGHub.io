@@ -234,10 +234,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2023-08-01 15:58:45 / 修改时间：15:58:53" itemprop="dateCreated datePublished" datetime="2023-08-01T15:58:45+08:00">2023-08-01</time>
+      <time title="创建时间：2023-08-01 15:58:45" itemprop="dateCreated datePublished" datetime="2023-08-01T15:58:45+08:00">2023-08-01</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2023-08-11 17:37:28" itemprop="dateModified" datetime="2023-08-11T17:37:28+08:00">2023-08-11</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -255,14 +261,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>9.8k</span>
+      <span>12k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>9 分钟</span>
+      <span>11 分钟</span>
     </span>
 </div>
 
@@ -365,7 +371,23 @@
 <blockquote>
 <p>Sub 背景色取消()<br>    ActiveDocument.Background.Fill.Visible = msoFalse<br>End Sub</p>
 </blockquote>
-<p>————————————————<br>版权声明：本文为CSDN博主「erqie」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/erqie/article/details/128101183">https://blog.csdn.net/erqie/article/details/128101183</a></p>
+<h2 id="12-设置页边距，表格宽度100"><a href="#12-设置页边距，表格宽度100" class="headerlink" title="12.设置页边距，表格宽度100%"></a>12.设置页边距，表格宽度100%</h2><p>原因<br>同事问我能不能弄一个：</p>
+<p><strong>代码</strong></p>
+<blockquote>
+<p>Sub tablekuandu100()<br>   ActiveDocument.PageSetup.TopMargin = 70.825<br>   ActiveDocument.PageSetup.BottomMargin = 70.825<br>   ActiveDocument.PageSetup.LeftMargin = 70.825<br>   ActiveDocument.PageSetup.RightMargin = 70.825<br>    Dim tempTable As Table<br>    Application.ScreenUpdating = False</p>
+<p>‘判断文档是否被保护<br>    If ActiveDocument.ProtectionType = wdAllowOnlyFormFields Then<br>        MsgBox “文档已保护，此时不能选中多个表格！”<br>        Exit Sub<br>    End If<br>    ‘删除所有可编辑的区域<br>    ActiveDocument.DeleteAllEditableRanges wdEditorEveryone<br>    ‘添加可编辑区域<br>    For Each tempTable In ActiveDocument.Tables<br>        tempTable.Range.Editors.Add wdEditorEveryone<br>        tempTable.PreferredWidthType = wdPreferredWidthPercent<br>        tempTable.PreferredWidth = 100<br>    Next<br>    ‘选中所有可编辑区域<br>    ActiveDocument.SelectAllEditableRanges wdEditorEveryone<br>    ‘删除所有可编辑的区域<br>    ActiveDocument.DeleteAllEditableRanges wdEditorEveryone<br>    Application.ScreenUpdating = True<br>End Sub</p>
+</blockquote>
+<h2 id="13-文字替换"><a href="#13-文字替换" class="headerlink" title="13.文字替换"></a>13.文字替换</h2><p>原因<br>调整格式需要：</p>
+<p><strong>代码</strong></p>
+<blockquote>
+<p>Sub 描述整体替换()<br>With Selection.Find<br> .ClearFormatting<br> .Text = “)“<br> .Replacement.ClearFormatting<br> .Replacement.Text = “）”<br> .Execute Replace:=wdReplaceAll, Forward:=True, _<br> Wrap:=wdFindContinue<br>End With</p>
+<p> ‘数字、英文用Times,引号用宋体<br>  ActiveDocument.Content.Font.Name = “Times New Roman”<br>  Selection.Find.ClearFormatting<br>  Selection.Find.Replacement.ClearFormatting<br>  With Selection.Find<br>      .Text = “[“ &amp; ChrW(8220) &amp; ChrW(8221) &amp; “]”<br>      .Replacement.Text = “”<br>      .Forward = True<br>      .Wrap = wdFindContinue<br>      .Format = True<br>      .MatchCase = False<br>      .MatchWholeWord = False<br>      .MatchByte = False<br>      .MatchAllWordForms = False<br>      .MatchSoundsLike = False<br>      .MatchWildcards = True<br>      .Replacement.Font.Name = “宋体”<br>  End With<br>  Selection.Find.Execute Replace:=wdReplaceAll<br>End Sub</p>
+</blockquote>
+<h2 id="14-word批量转PDF"><a href="#14-word批量转PDF" class="headerlink" title="14.word批量转PDF"></a>14.word批量转PDF</h2><p>原因<br>打印机守护神需要：</p>
+<p><strong>代码</strong></p>
+<blockquote>
+<p>Sub Word2Pdf()<br>‘说明：将一整个文件夹的word转PDF，所以目录需要选择到文件夹。小YUT试过了，比批量打印快一些。<br>    Dim xIndex As String<br>    Dim xDlg As FileDialog<br>    Dim xFolder As Variant<br>    Dim xNewName As String<br>    Dim xFileName As String<br>    Set xDlg = Application.FileDialog(msoFileDialogFolderPicker)<br>    If xDlg.Show &lt;&gt; -1 Then Exit Sub<br>    xFolder = xDlg.SelectedItems(1) + “&quot;<br>    xFileName = Dir(xFolder &amp; “<em>.</em>“, vbNormal)<br>    While xFileName &lt;&gt; “”<br>        If ((Right(xFileName, 4)) &lt;&gt; “.doc” Or Right(xFileName, 4) &lt;&gt; “.docx”) Then<br>            xIndex = InStr(xFileName, “.”) + 1<br>            xNewName = Replace(xFileName, Mid(xFileName, xIndex), “pdf”)<br>            Documents.Open FileName:=xFolder &amp; xFileName, _<br>                ConfirmConversions:=False, ReadOnly:=False, AddToRecentFiles:=False, _<br>                PasswordDocument:=””, PasswordTemplate:=””, Revert:=False, _<br>                WritePasswordDocument:=””, WritePasswordTemplate:=””, Format:= _<br>                wdOpenFormatAuto, XMLTransform:=””<br>            ActiveDocument.ExportAsFixedFormat OutputFileName:=xFolder &amp; xNewName, _<br>                ExportFormat:=wdExportFormatPDF, OpenAfterExport:=False, OptimizeFor:= _<br>                wdExportOptimizeForPrint, Range:=wdExportAllDocument, From:=1, To:=1, _<br>                Item:=wdExportDocumentContent, IncludeDocProps:=True, KeepIRM:=True, _<br>                CreateBookmarks:=wdExportCreateNoBookmarks, DocStructureTags:=True, _<br>                BitmapMissingFonts:=True, UseISO19005_1:=False<br>            ActiveDocument.Save<br>            ActiveDocument.Close<br>        End If<br>        xFileName = Dir()<br>    Wend<br>End Sub</p>
+</blockquote>
 
       
     </div>
