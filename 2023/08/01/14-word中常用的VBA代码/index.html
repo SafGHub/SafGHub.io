@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"safghub.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.7.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<meta name="description" content="在word中通过VBA编写一些常用的函数，再利用快捷键激发，可以有效的提高写作的效率。以下分享个人通过网络收集，或者改造，或者自己录制后修改的代码，有需要的可以自取。因为已经记不清有些代码的出处了，如果有使用到你的代码，烦请告之添加引用说明或者我删除掉，谢谢！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="word中常用的vba代码">
+<meta property="og:url" content="https://safghub.github.io/2023/08/01/14-word%E4%B8%AD%E5%B8%B8%E7%94%A8%E7%9A%84VBA%E4%BB%A3%E7%A0%81/index.html">
+<meta property="og:site_name" content="Yut&#39;s Blog">
+<meta property="og:description" content="在word中通过VBA编写一些常用的函数，再利用快捷键激发，可以有效的提高写作的效率。以下分享个人通过网络收集，或者改造，或者自己录制后修改的代码，有需要的可以自取。因为已经记不清有些代码的出处了，如果有使用到你的代码，烦请告之添加引用说明或者我删除掉，谢谢！">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-08-01T07:58:45.000Z">
+<meta property="article:modified_time" content="2024-04-30T07:28:21.219Z">
+<meta property="article:author" content="yut">
+<meta property="article:tag" content="civil">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://safghub.github.io/2023/08/01/14-word%E4%B8%AD%E5%B8%B8%E7%94%A8%E7%9A%84VBA%E4%BB%A3%E7%A0%81/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://safghub.github.io/2023/08/01/14-word%E4%B8%AD%E5%B8%B8%E7%94%A8%E7%9A%84VBA%E4%BB%A3%E7%A0%81/","path":"2023/08/01/14-word中常用的VBA代码/","title":"word中常用的vba代码"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>word中常用的vba代码 | Yut's Blog</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Yut's Blog</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">baby steps</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-待解决&已解决"><a href="/notes/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>待解决&已解决</a></li>
+        <li class="menu-item menu-item-札记"><a href="/zhaji/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>札记</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">1.字体设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E8%AE%BE%E7%BD%AE%E4%B8%8A%E4%B8%8B%E6%A0%87"><span class="nav-number">2.</span> <span class="nav-text">2. 设置上下标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E6%9B%BF%E6%8D%A2%E7%B2%98%E8%B4%B4%E7%9A%84%E5%86%85%E5%AE%B9"><span class="nav-number">3.</span> <span class="nav-text">3. 替换粘贴的内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E6%9B%BF%E6%8D%A2%E4%B8%AD%E6%96%87%E7%9A%84%E5%8D%95%E4%BD%8D"><span class="nav-number">4.</span> <span class="nav-text">4. 替换中文的单位</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E6%AE%B5%E8%90%BD%E7%BC%A9%E8%BF%9B%E5%A4%84%E7%90%86"><span class="nav-number">5.</span> <span class="nav-text">5. 段落缩进处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E7%B2%98%E8%B4%B4%E7%BA%AF%E6%96%87%E6%9C%AC"><span class="nav-number">6.</span> <span class="nav-text">6. 粘贴纯文本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E8%AE%BE%E7%BD%AE%E6%89%93%E5%BC%80%E6%96%87%E6%A1%A3%E7%9A%84%E9%BB%98%E8%AE%A4%E6%98%BE%E7%A4%BA%E6%AF%94%E4%BE%8B"><span class="nav-number">7.</span> <span class="nav-text">7.设置打开文档的默认显示比例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-%E8%AE%BE%E7%BD%AE%E6%AE%B5%E8%90%BD%E4%B8%8E%E4%B8%8B%E6%AE%B5%E5%90%8C%E9%A1%B5"><span class="nav-number">8.</span> <span class="nav-text">8. 设置段落与下段同页</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-%E8%A1%A8%E6%A0%BC%E8%BE%B9%E6%A1%86%E8%AE%BE%E7%BD%AE"><span class="nav-number">9.</span> <span class="nav-text">9. 表格边框设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E5%A4%A7%E5%B0%8F"><span class="nav-number">10.</span> <span class="nav-text">10.设置图片大小</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-%E5%85%B3%E4%BA%8E%E6%96%87%E6%A1%A3%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2%E7%9A%84%E8%AE%BE%E7%BD%AE"><span class="nav-number">11.</span> <span class="nav-text">11.关于文档背景颜色的设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-%E8%AE%BE%E7%BD%AE%E9%A1%B5%E8%BE%B9%E8%B7%9D%EF%BC%8C%E8%A1%A8%E6%A0%BC%E5%AE%BD%E5%BA%A6100"><span class="nav-number">12.</span> <span class="nav-text">12.设置页边距，表格宽度100%</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-%E6%96%87%E5%AD%97%E6%9B%BF%E6%8D%A2"><span class="nav-number">13.</span> <span class="nav-text">13.文字替换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-word%E6%89%B9%E9%87%8F%E8%BD%ACPDF"><span class="nav-number">14.</span> <span class="nav-text">14.word批量转PDF</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-overview">
+            <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="yut"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">yut</p>
+  <div class="site-description" itemprop="description">如你所见</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://safghub.github.io/2023/08/01/14-word%E4%B8%AD%E5%B8%B8%E7%94%A8%E7%9A%84VBA%E4%BB%A3%E7%A0%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="yut">
+      <meta itemprop="description" content="如你所见">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yut's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          word中常用的vba代码
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-08-01 15:58:45" itemprop="dateCreated datePublished" datetime="2023-08-01T15:58:45+08:00">2023-08-01</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2024-04-30 15:28:21" itemprop="dateModified" datetime="2024-04-30T15:28:21+08:00">2024-04-30</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/" itemprop="url" rel="index"><span itemprop="name">持续更新</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>13k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>11 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>在word中通过VBA编写一些常用的函数，再利用快捷键激发，可以有效的提高写作的效率。以下分享个人通过网络收集，或者改造，或者自己录制后修改的代码，有需要的可以自取。<br>因为已经记不清有些代码的出处了，如果有使用到你的代码，烦请告之添加引用说明或者我删除掉，谢谢！</p>
+<span id="more"></span>
+
+
+
+<p>[【转载】word vba设置表格样式 - jes - 博客园 (cnblogs.com)](<a target="_blank" rel="noopener" href="https://www.cnblogs.com/GuominQiu/articles/12790120.html#:~:text=Selection.Rows.HeadingFormat">https://www.cnblogs.com/GuominQiu/articles/12790120.html#:~:text=Selection.Rows.HeadingFormat</a> %3D wdToggle,’自动标题行重复.Range.Font.Bold %3D True ‘表头加粗黑体)</p>
+<h2 id="1-字体设置"><a href="#1-字体设置" class="headerlink" title="1.字体设置"></a>1.字体设置</h2><p>作用<br>针对常用报告里英文采用Times New Roman字体，而全选文档设置后会导致引号变成难看的英文形式，故引号单独设置为宋体。</p>
+<p><strong>代码</strong></p>
+<blockquote>
+<p>Sub 设置字体()<br>   ‘数字、英文用Times,引号用宋体<br>   ActiveDocument.Content.Font.Name = “Times New Roman”<br>   Selection.Find.ClearFormatting<br>   Selection.Find.Replacement.ClearFormatting<br>   With Selection.Find<br>       .Text = “[“ &amp; ChrW(8220) &amp; ChrW(8221) &amp; “]”<br>       .Replacement.Text = “”<br>       .Forward = True<br>       .Wrap = wdFindContinue<br>       .Format = True<br>       .MatchCase = False<br>       .MatchWholeWord = False<br>       .MatchByte = False<br>       .MatchAllWordForms = False<br>       .MatchSoundsLike = False<br>       .MatchWildcards = True<br>       .Replacement.Font.Name = “宋体”<br>   End With<br>   Selection.Find.Execute Replace:=wdReplaceAll<br>End Sub</p>
+</blockquote>
+<h2 id="2-设置上下标"><a href="#2-设置上下标" class="headerlink" title="2. 设置上下标"></a>2. 设置上下标</h2><p>原因<br>对工科的报告来讲，经常报告里有需要设置上下标的地方，每次都要在报告里用鼠标（需要点N次），或者快捷键（不太方便按）的形式来设置，即不方便，还容易漏掉。</p>
+<p><strong>代码</strong></p>
+<blockquote>
+<p>Sub 设置上下标()<br>   Application.ScreenUpdating = False<br>   ‘    SetSuperscriptAndSubscript “×10”, “8”<br>   ‘    SetSuperscriptAndSubscript “×10”, “4”<br>   ‘单位<br>   ‘SetSuperscriptAndSubscript “km”, “2”<br>   SetSuperscriptAndSubscript “m”, “2”               ‘会同时处理m2,km2,m2/s等<br>   SetSuperscriptAndSubscript “m”, “3”           ‘会同时处理m3,m3/s等<br>   ‘    SetSuperscriptAndSubscript “ｍ”, “3”           ‘处理中文的m3<br>   ‘    SetSuperscriptAndSubscript “ｍ”, “2”           ‘处理中文的m3<br>   ‘化学式<br>   ‘SO42-<br>   ‘ SetSuperscriptAndSubscript “SO4”, “2-“<br>   ‘SetSuperscriptAndSubscript “SO”, “4”, “2-“, False’ SO42-<br>   ‘HCO3-<br>   ‘SetSuperscriptAndSubscript “HCO3”, “-“<br>   ‘  SetSuperscriptAndSubscript “HCO”, “3”, “-“, False<br>   ‘H2S,h2sio4<br>   ‘  SetSuperscriptAndSubscript “H”, “2”, “S”, False<br>   ‘SetSuperscriptAndSubscript “H2SIO”, “4”, “”, False<br>   ‘O2,co2,NO2<br>   ‘   SetSuperscriptAndSubscript “O”, “2”, “”, False<br>   ‘   SetSuperscriptAndSubscript “Fe”, “2”, “O”, False<br>   ‘   SetSuperscriptAndSubscript “O”, “3”, “”, False<br>   ‘   SetSuperscriptAndSubscript “P”, “2”, “O”, False<br>   ‘   SetSuperscriptAndSubscript “O”, “5”, “”, False<br>   ‘   SetSuperscriptAndSubscript “H”, “2”, “”, False<br>   ‘N2<br>   ‘SetSuperscriptAndSubscript “N”, “2”, “”, False<br>   ‘CH4,NH4<br>   ‘   SetSuperscriptAndSubscript “CH”, “4”, “”, False<br>   ‘   SetSuperscriptAndSubscript “NH”, “4”, “”, False<br>   ‘NH3-n<br>      SetSuperscriptAndSubscript “NH”, “3”, “-N”, False<br>   ‘BOD5<br>     SetSuperscriptAndSubscript “BOD”, “5”, “”, False<br>   ‘CODMN<br>   ‘  SetSuperscriptAndSubscript “COD”, “Mn”, “”, False<br>   ‘  SetSuperscriptAndSubscript “COD”, “Cr”, “”, False<br>   ‘Na+<br>   ‘  SetSuperscriptAndSubscript “Na”, “+”, “”<br>   ‘K+<br>   ‘  SetSuperscriptAndSubscript “K”, “+”, “”<br>   ‘Ca2+<br>   ‘  SetSuperscriptAndSubscript “Ca”, “2+”, “”<br>   ‘Mg2+<br>   ‘  SetSuperscriptAndSubscript “Mg”, “2+”, “”<br>   ‘H+<br>   ‘  SetSuperscriptAndSubscript “H”, “+”, “”<br>   ‘Cr6+<br>   ‘  SetSuperscriptAndSubscript “Cr”, “6+”, “”<br>   ‘  SetSuperscriptAndSubscript “S”, “i”, “”, False<br>   ‘  SetSuperscriptAndSubscript “CaCO”, “3”, “”, False<br>   ‘   SetSuperscriptAndSubscript “Al”, “2”, “O”, False<br>   Application.ScreenUpdating = True<br>End Sub</p>
+</blockquote>
+<blockquote>
+<p>Private Sub SetSuperscriptAndSubscript(ByVal PrefixChr As String, ByVal SetChr As String, Optional ByVal PostChr As String, Optional ByVal SuperscriptMode As Boolean = True)<br>   ‘程序功能：设置文档中特定字符为上标或下标。<br>   ‘参数说明：<br>   ‘PrefixChr：必选参数，要设置为上、下标字符之前的字符；<br>   ‘SetChr：必选参数，要设置为上、下标的字符；<br>   ‘PostChr:必选,但可赋空字符串,若为了界定整个替换符号而包含的后缀,防止误替换,可加此参数<br>   ‘SuperscriptMode：可选参数，设置为 True 表示将 SetChr 设置为上标，设置为 False 表示将 SetChr 设置为下标，默认为 True。<br>   ‘举例说明：<br>   ‘我们要将文档中所有的“m3/s”中的“3”设置为上标，可通过下面这一行代码调用本程序完成：<br>   ‘SetSuperscriptAndSubscript “M”,”3” ‘这里设置上标，可省略第三个参数。<br>   Selection.Start = ActiveDocument.Paragraphs(1).Range.Start    ‘将光标定位至活动文档第一段落段首的位置<br>   Selection.Collapse wdCollapseStart                ‘折叠至起始位置<br>   With Selection.Find<br>       ‘先把整个字符换成上、下标<br>       .ClearFormatting<br>       .Replacement.ClearFormatting<br>       .Text = PrefixChr &amp; SetChr &amp; PostChr<br>       .Replacement.Text = .Text<br>       If SuperscriptMode Then<br>           .Replacement.Font.Superscript = True<br>       Else<br>           .Replacement.Font.Subscript = True<br>       End If<br>       .Execute Replace:=wdReplaceAll<br>       ‘再把前面的内容换成原来正常的文本<br>       .ClearFormatting<br>       .Replacement.ClearFormatting<br>       .Text = PrefixChr<br>       If SuperscriptMode Then<br>           .Font.Superscript = True<br>       Else<br>           .Font.Subscript = True<br>       End If<br>       .Replacement.Text = .Text<br>       If SuperscriptMode Then<br>           .Replacement.Font.Superscript = False<br>       Else<br>           .Replacement.Font.Subscript = False<br>       End If<br>       .Execute Replace:=wdReplaceAll<br>       ‘再把后面的内容换成原来正常的文本<br>       If Len(PostChr) &gt; 0 Then<br>           .ClearFormatting<br>           .Replacement.ClearFormatting<br>           .Text = PostChr<br>           If SuperscriptMode Then<br>               .Font.Superscript = True<br>           Else<br>               .Font.Subscript = True<br>           End If<br>           .Replacement.Text = .Text<br>           If SuperscriptMode Then<br>               .Replacement.Font.Superscript = False<br>           Else<br>               .Replacement.Font.Subscript = False<br>           End If<br>           .Execute Replace:=wdReplaceAll<br>       End If<br>   End With<br>End Sub</p>
+</blockquote>
+<p>PS:用到的SetSuperscriptAndSubscript函数好像是从网上找到的，具体作者忘记了，感谢！</p>
+<h2 id="3-替换粘贴的内容"><a href="#3-替换粘贴的内容" class="headerlink" title="3. 替换粘贴的内容"></a>3. 替换粘贴的内容</h2><p>原因<br>经常从PDF文件或者网上复制的内容下来会有很多的空格，多余的回车，我个这个函数，配合alt+f快捷键，来快速的删除与替换相应的符号。主要包括空格、英文逗号、英文分号等。</p>
+<p><strong>代码</strong></p>
+<blockquote>
+<p>Sub 替换粘贴()<br>   ‘delete the space<br>   Selection.Find.Execute findtext:=” “, replacewith:=””, Replace:=wdReplaceAll, Wrap:=wdFindStop<br>   ‘replace the english comma to chinese comma<br>   Selection.Find.Execute findtext:=”,”, replacewith:=”，”, Replace:=wdReplaceAll, Wrap:=wdFindStop<br>   Selection.Find.Execute findtext:=”;”, replacewith:=”；”, Replace:=wdReplaceAll, Wrap:=wdFindStop<br>   Selection.Find.Execute findtext:=”:”, replacewith:=”：”, Replace:=wdReplaceAll, Wrap:=wdFindStop<br>   Selection.Find.Execute findtext:=”(“, replacewith:=”（”, Replace:=wdReplaceAll, Wrap:=wdFindStop<br>   Selection.Find.Execute findtext:=”)”, replacewith:=”）”, Replace:=wdReplaceAll, Wrap:=wdFindStop<br>   Selection.Find.Execute findtext:=”^p”, replacewith:=””, Replace:=wdReplaceAll, Wrap:=wdFindStop, MatchWildcards:=False<br>End Sub</p>
+</blockquote>
+<h2 id="4-替换中文的单位"><a href="#4-替换中文的单位" class="headerlink" title="4. 替换中文的单位"></a>4. 替换中文的单位</h2><p>原因<br>有时候参考的老资料很多时候习惯用中文的单位，导致报告里的单位一会儿中文一会儿英文，为了统一，直接全部替换成英文的。<br>通过以下函数运行后，再运行上下标函数可实现上下标的修改。</p>
+<p><strong>代码</strong></p>
+<blockquote>
+<p>Sub 替换中文单位()<br>    Selection.Find.Execute findtext:=”平方米”, replacewith:=”m2”, Replace:=wdReplaceAll, Wrap:=wdFindStop<br>    Selection.Find.Execute findtext:=”平方千米”, replacewith:=”km2”, Replace:=wdReplaceAll, Wrap:=wdFindStop<br>    Selection.Find.Execute findtext:=”平方公里”, replacewith:=”km2”, Replace:=wdReplaceAll, Wrap:=wdFindStop<br>    Selection.Find.Execute findtext:=”立方米”, replacewith:=”m3”, Replace:=wdReplaceAll, Wrap:=wdFindStop<br>    Selection.Find.Execute findtext:=”公里”, replacewith:=”km”, Replace:=wdReplaceAll, Wrap:=wdFindStop<br>    Selection.Find.Execute findtext:=”千米”, replacewith:=”km”, Replace:=wdReplaceAll, Wrap:=wdFindStop<br>    Selection.Find.Execute findtext:=”厘米”, replacewith:=”cm”, Replace:=wdReplaceAll, Wrap:=wdFindStop<br>    Selection.Find.Execute findtext:=”毫米”, replacewith:=”mm”, Replace:=wdReplaceAll, Wrap:=wdFindStop<br>End Sub</p>
+</blockquote>
+<h2 id="5-段落缩进处理"><a href="#5-段落缩进处理" class="headerlink" title="5. 段落缩进处理"></a>5. 段落缩进处理</h2><p>原因<br>很多人习惯用空格来代替段首的缩进，然后经常出现空格数量不是2个，导致格式不美。<br>我一般使用快捷键alt+s,s来设置缩进。针对有些表格里有乱七八糟的缩进，再用一个函数来取消缩进，设置快捷键alt+s,d</p>
+<p><strong>代码</strong></p>
+<blockquote>
+<p>Sub 缩进()<br>    With Selection.ParagraphFormat<br>        .CharacterUnitFirstLineIndent = 2<br>        .LeftIndent = 0<br>    End With<br>End Sub</p>
+</blockquote>
+<blockquote>
+<p>Sub 缩进取消()<br>    With Selection.ParagraphFormat<br>        .CharacterUnitFirstLineIndent = 0<br>        .LeftIndent = 0<br>        .FirstLineIndent = CentimetersToPoints(0)<br>    End With<br>End Sub</p>
+</blockquote>
+<h2 id="6-粘贴纯文本"><a href="#6-粘贴纯文本" class="headerlink" title="6. 粘贴纯文本"></a>6. 粘贴纯文本</h2><p>原因<br>有时候复制别的文件里的内容，但只想要文字，不要格式。而用鼠标需要右键，选择纯文本粘贴，个人感觉太麻烦，换成快捷键：ctrl+shift+v</p>
+<p><strong>代码</strong></p>
+<blockquote>
+<p>Sub 粘贴保留文本()<br>   Selection.PasteAndFormat (wdFormatPlainText)<br>End Sub</p>
+</blockquote>
+<h2 id="7-设置打开文档的默认显示比例"><a href="#7-设置打开文档的默认显示比例" class="headerlink" title="7.设置打开文档的默认显示比例"></a>7.设置打开文档的默认显示比例</h2><p>原因<br>在现在的大显示屏下，word默认的100%的显示比例显然让文字太小了，一般现在都是放大后操作。个人的屏幕设置放大到130%合适，但每次都要去设置一遍就太麻烦了。利用代码设置每个文件打开后默认放大到130%。<br>每个文档打开后默认会运行AutoOpen函数，不要修改这个名字。自己的操作可以写到这里。</p>
+<p><strong>代码</strong></p>
+<blockquote>
+<p>Sub AutoOpen()<br>    ‘设置打开文档的默认显示比例<br>    ActiveDocument.ActiveWindow.View.Zoom.Percentage = 130<br>    ‘设置打开文档修改默认背景色<br>    背景色设置<br>End Sub</p>
+</blockquote>
+<p>PS：以上代码中的背景色设置是我上一遍的设置word护眼绿色的函数。</p>
+<h2 id="8-设置段落与下段同页"><a href="#8-设置段落与下段同页" class="headerlink" title="8. 设置段落与下段同页"></a>8. 设置段落与下段同页</h2><p>原因<br>用鼠标去操作这个太麻烦，要点N次才能找到，直接用快捷键代替，我是用的：ctrl+d</p>
+<p><strong>代码</strong></p>
+<blockquote>
+<p>Sub 与下段同页()<br>   Selection.Paragraphs.KeepWithNext = True<br>End Sub</p>
+</blockquote>
+<h2 id="9-表格边框设置"><a href="#9-表格边框设置" class="headerlink" title="9. 表格边框设置"></a>9. 表格边框设置</h2><p>原因<br>经常写报告的人可能会处理很多表格，常见的报告表格要嘛用粗边框，要嘛没有左右两侧的边框。为了不一个表格一个表格的去设置，采用代码控制，使用的时候只要鼠标点到表格内部任意位置，然后用快捷键设置格式。因为涉及多个函数，我用alt+b做引导，通过又快捷键控制，如设置表格重复标题行用alt+b,t。</p>
+<p><strong>代码</strong><br>重复标题行，选中要重复的标题行后按快捷键</p>
+<blockquote>
+<p>Sub 表格重复标题行()<br>   Selection.Rows.HeadingFormat = wdToggle<br>End Sub</p>
+</blockquote>
+<p>设置选中表格行高</p>
+<blockquote>
+<p>Sub 表格行高选中()<br>    Selection.Tables(1).Rows.HeightRule = wdRowHeightAtLeast<br>    Selection.Tables(1).Rows.Height = CentimetersToPoints(0.7)<br>End Sub</p>
+</blockquote>
+<p>粗边框去侧边线</p>
+<blockquote>
+<p>Sub 表格粗边框去侧边线()<br>    Application.ScreenUpdating = False<br>    With Selection.Tables(1)<br>        With .Borders(wdBorderVertical)<br>            .LineStyle = wdLineStyleSingle<br>        End With<br>        With .Borders(wdBorderLeft)<br>            .LineStyle = wdLineStyleNone<br>        End With<br>        With .Borders(wdBorderRight)<br>            .LineStyle = wdLineStyleNone<br>        End With<br>        With .Borders(wdBorderTop)<br>            .LineStyle = wdLineStyleSingle<br>            .LineWidth = wdLineWidth150pt<br>        End With<br>        With .Borders(wdBorderBottom)<br>            .LineStyle = wdLineStyleSingle<br>            .LineWidth = wdLineWidth150pt<br>        End With<br>    End With<br>    Application.ScreenUpdating = True<br>End Sub</p>
+</blockquote>
+<p>粗边框</p>
+<blockquote>
+<p>Sub 表格粗边框选中()<br>    Application.ScreenUpdating = False<br>    With Selection.Tables(1)<br>        With .Borders(wdBorderLeft)<br>            .LineStyle = wdLineStyleSingle<br>            .LineWidth = wdLineWidth150pt<br>        End With<br>        With .Borders(wdBorderRight)<br>            .LineStyle = wdLineStyleSingle<br>            .LineWidth = wdLineWidth150pt<br>        End With<br>        With .Borders(wdBorderTop)<br>            .LineStyle = wdLineStyleSingle<br>            .LineWidth = wdLineWidth150pt<br>        End With<br>        With .Borders(wdBorderBottom)<br>            .LineStyle = wdLineStyleSingle<br>            .LineWidth = wdLineWidth150pt<br>        End With<br>    End With<br>    Application.ScreenUpdating = True<br>End Sub</p>
+</blockquote>
+<p>用得比较多的一个整体的设置，一般设置alt+b,g，一键完成表格格式设置</p>
+<blockquote>
+<p>Sub 表格设置格式()<br>    Dim t As Table, s As Range<br>    Set t = Selection.Tables(1)<br>    ‘Set s = t.Rows(1).Range<br>    ‘With s.Font<br>    ‘    .Bold = True        ‘表头加粗<br>    ‘End With<br>    ‘段落水平居中<br>    t.Range.ParagraphFormat.Alignment = wdAlignParagraphCenter<br>    ‘段落垂直居中<br>    t.Range.Cells.VerticalAlignment = wdCellAlignVerticalCenter<br>    ‘设置字号<br>    t.Range.Font.Size = 10.5 ‘小5：9，5号：10.5，小四：12，四号：14,<br>    t.Range.Font.Name = “宋体”<br>    t.Range.Font.Name = “Times New Roman”<br>    ‘单倍行距<br>    t.Range.ParagraphFormat.LineSpacingRule = wdLineSpaceSingle<br>    ‘根据窗口自动调整表格<br>    t.AutoFitBehavior (wdAutoFitWindow)<br>    ‘根据内容自动调整表格<br>    t.AllowAutoFit = False<br>    表格行高选中<br>    ‘表格粗边框选中<br>    表格粗边框去侧边线<br>    缩进取消<br>End Sub</p>
+</blockquote>
+<p>当然，也可以一键完成整个文档的设置的，给一个参考代码：</p>
+<blockquote>
+<p>Sub 表格行高全文()<br>    Application.ScreenUpdating = False<br>    For i = 1 To ActiveDocument.Tables.Count<br>        ActiveDocument.Tables(i).Rows.HeightRule = wdRowHeightAtLeast<br>        ActiveDocument.Tables(i).Rows.Height = CentimetersToPoints(0.7)<br>    Next<br>    Application.ScreenUpdating = True<br>End Sub</p>
+</blockquote>
+<h2 id="10-设置图片大小"><a href="#10-设置图片大小" class="headerlink" title="10.设置图片大小"></a>10.设置图片大小</h2><p>原因<br>如果文档中图片过多，一个一个去调整大小很麻烦。</p>
+<p><strong>代码</strong></p>
+<blockquote>
+<p>Sub 图片大小全文()<br>    Mywidth = 7                                     ‘10为图片宽度（厘米）<br>    Myheigth = 5.2                                      ‘5.2为图片高度（厘米）<br>    Application.ScreenUpdating = False<br>    For Each ishape In ActiveDocument.InlineShapes    ‘嵌入型图片<br>        ishape.LockAspectRatio = msoFalse             ‘不锁定纵横比<br>        ishape.Height = 28.345 * Myheigth             ‘单位换算也可以用CentimetersToPoints()函数<br>        ishape.Width = 28.345 * Mywidth<br>    Next ishape<br>    Application.ScreenUpdating = True<br>End Sub</p>
+</blockquote>
+<p>PS:大小可以调整，这个参数合适双栏图片</p>
+<p>给全文档的图片加一个边框：</p>
+<blockquote>
+<p>Sub 图片边框全文()<br>    Dim oInlineShape As InlineShape<br>    Application.ScreenUpdating = False<br>    For Each oInlineShape In ActiveDocument.InlineShapes<br>        With oInlineShape.Borders<br>            .OutsideLineStyle = wdLineStyleSingle<br>            .OutsideColorIndex = wdColorAutomatic<br>            .OutsideLineWidth = wdLineWidth025pt<br>        End With<br>    Next<br>    Application.ScreenUpdating = True<br>End Sub</p>
+</blockquote>
+<h2 id="11-关于文档背景颜色的设置"><a href="#11-关于文档背景颜色的设置" class="headerlink" title="11.关于文档背景颜色的设置"></a>11.关于文档背景颜色的设置</h2><p>原因<br>win10过后设置系统的护眼颜色在word里失效了，采用一个曲线办法：</p>
+<p><strong>代码</strong></p>
+<blockquote>
+<p>Sub 背景色设置()<br>    ActiveDocument.Background.Fill.Visible = msoTrue<br>    ActiveDocument.Background.Fill.ForeColor.RGB = RGB(204, 232, 207)<br>    ActiveDocument.Background.Fill.Solid<br>    ActiveDocument.ActiveWindow.View.DisplayBackgrounds = True<br>End Sub</p>
+</blockquote>
+<blockquote>
+<p>Sub 背景色取消()<br>    ActiveDocument.Background.Fill.Visible = msoFalse<br>End Sub</p>
+</blockquote>
+<h2 id="12-设置页边距，表格宽度100"><a href="#12-设置页边距，表格宽度100" class="headerlink" title="12.设置页边距，表格宽度100%"></a>12.设置页边距，表格宽度100%</h2><p>原因<br>同事问我能不能弄一个：</p>
+<p><strong>代码</strong></p>
+<blockquote>
+<p>Sub tablekuandu100()<br>   ActiveDocument.PageSetup.TopMargin = 70.825<br>   ActiveDocument.PageSetup.BottomMargin = 70.825<br>   ActiveDocument.PageSetup.LeftMargin = 70.825<br>   ActiveDocument.PageSetup.RightMargin = 70.825<br>    Dim tempTable As Table<br>    Application.ScreenUpdating = False</p>
+<p>‘判断文档是否被保护<br>    If ActiveDocument.ProtectionType = wdAllowOnlyFormFields Then<br>        MsgBox “文档已保护，此时不能选中多个表格！”<br>        Exit Sub<br>    End If<br>    ‘删除所有可编辑的区域<br>    ActiveDocument.DeleteAllEditableRanges wdEditorEveryone<br>    ‘添加可编辑区域<br>    For Each tempTable In ActiveDocument.Tables<br>        tempTable.Range.Editors.Add wdEditorEveryone<br>        tempTable.PreferredWidthType = wdPreferredWidthPercent<br>        tempTable.PreferredWidth = 100<br>    Next<br>    ‘选中所有可编辑区域<br>    ActiveDocument.SelectAllEditableRanges wdEditorEveryone<br>    ‘删除所有可编辑的区域<br>    ActiveDocument.DeleteAllEditableRanges wdEditorEveryone<br>    Application.ScreenUpdating = True<br>End Sub</p>
+</blockquote>
+<h2 id="13-文字替换"><a href="#13-文字替换" class="headerlink" title="13.文字替换"></a>13.文字替换</h2><p>原因<br>调整格式需要：</p>
+<p><strong>代码</strong></p>
+<blockquote>
+<p>Sub 描述整体替换()<br>With Selection.Find<br> .ClearFormatting<br> .Text = “)“<br> .Replacement.ClearFormatting<br> .Replacement.Text = “）”<br> .Execute Replace:=wdReplaceAll, Forward:=True, _<br> Wrap:=wdFindContinue<br>End With</p>
+<p> ‘数字、英文用Times,引号用宋体<br>  ActiveDocument.Content.Font.Name = “Times New Roman”<br>  Selection.Find.ClearFormatting<br>  Selection.Find.Replacement.ClearFormatting<br>  With Selection.Find<br>      .Text = “[“ &amp; ChrW(8220) &amp; ChrW(8221) &amp; “]”<br>      .Replacement.Text = “”<br>      .Forward = True<br>      .Wrap = wdFindContinue<br>      .Format = True<br>      .MatchCase = False<br>      .MatchWholeWord = False<br>      .MatchByte = False<br>      .MatchAllWordForms = False<br>      .MatchSoundsLike = False<br>      .MatchWildcards = True<br>      .Replacement.Font.Name = “宋体”<br>  End With<br>  Selection.Find.Execute Replace:=wdReplaceAll<br>End Sub</p>
+</blockquote>
+<h2 id="14-word批量转PDF"><a href="#14-word批量转PDF" class="headerlink" title="14.word批量转PDF"></a>14.word批量转PDF</h2><p>原因<br>打印机守护神需要：</p>
+<p><strong>代码</strong></p>
+<blockquote>
+<p>Sub Word2Pdf()<br>‘说明：将一整个文件夹的word转PDF，所以目录需要选择到文件夹。小YUT试过了，比批量打印快一些。<br>    Dim xIndex As String<br>    Dim xDlg As FileDialog<br>    Dim xFolder As Variant<br>    Dim xNewName As String<br>    Dim xFileName As String<br>    Set xDlg = Application.FileDialog(msoFileDialogFolderPicker)<br>    If xDlg.Show &lt;&gt; -1 Then Exit Sub<br>    xFolder = xDlg.SelectedItems(1) + “&quot;<br>    xFileName = Dir(xFolder &amp; “<em>.</em>“, vbNormal)<br>    While xFileName &lt;&gt; “”<br>        If ((Right(xFileName, 4)) &lt;&gt; “.doc” Or Right(xFileName, 4) &lt;&gt; “.docx”) Then<br>            xIndex = InStr(xFileName, “.”) + 1<br>            xNewName = Replace(xFileName, Mid(xFileName, xIndex), “pdf”)<br>            Documents.Open FileName:=xFolder &amp; xFileName, _<br>                ConfirmConversions:=False, ReadOnly:=False, AddToRecentFiles:=False, _<br>                PasswordDocument:=””, PasswordTemplate:=””, Revert:=False, _<br>                WritePasswordDocument:=””, WritePasswordTemplate:=””, Format:= _<br>                wdOpenFormatAuto, XMLTransform:=””<br>            ActiveDocument.ExportAsFixedFormat OutputFileName:=xFolder &amp; xNewName, _<br>                ExportFormat:=wdExportFormatPDF, OpenAfterExport:=False, OptimizeFor:= _<br>                wdExportOptimizeForPrint, Range:=wdExportAllDocument, From:=1, To:=1, _<br>                Item:=wdExportDocumentContent, IncludeDocProps:=True, KeepIRM:=True, _<br>                CreateBookmarks:=wdExportCreateNoBookmarks, DocStructureTags:=True, _<br>                BitmapMissingFonts:=True, UseISO19005_1:=False<br>            ActiveDocument.Save<br>            ActiveDocument.Close<br>        End If<br>        xFileName = Dir()<br>    Wend<br>End Sub</p>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/civil/" rel="tag"># civil</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/07/27/12-%E8%AE%BE%E5%A4%87/" rel="prev" title="设备">
+                  <i class="fa fa-chevron-left"></i> 设备
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2023/11/28/15-%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE/" rel="next" title="参考文献">
+                  参考文献 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">yut</span>
+</div>
+
+ <!---->
+
+<!--
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>-->
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@next-theme/pjax@0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+<script src="/js/third-party/search/local-search.js"></script>
+
+  <script class="next-config" data-name="pdf" type="application/json">{"object_url":{"url":"https://cdn.jsdelivr.net/npm/pdfobject@2.2.6/pdfobject.min.js","integrity":"sha256-77geM50MfxCD17eqyJR+Dag1svjJOLN+BJ2F/DMqMEY="},"url":"/lib/pdf/web/viewer.html"}</script>
+  <script src="/js/third-party/tags/pdf.js"></script>
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>
