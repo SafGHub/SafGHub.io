@@ -3956,8 +3956,49 @@ T梁模板采用组合式钢模板，合模完毕，并由现场监理检查，�
 
 
 <blockquote>
-<p>RT<br>|case|tool|<br>|:–:|:–:|<br>|水泥 |用洁厕灵|<br>|玻璃胶| 卸甲水|<br>|油漆| 松节油|<br>|胶带不干胶 |酒精|<br>|石材铁锈 | 草酸|<br>|瓷砖黑印 |金属划痕清洁剂 美缝剂|<br>|旧血渍|  双氧水 硫磺皂|<br>|旧血渍|  双氧水 |</p>
+<p>RT</p>
 </blockquote>
+<hr>
+<table>
+<thead>
+<tr>
+<th align="center">case</th>
+<th align="center">tool</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">水泥</td>
+<td align="center">用洁厕灵</td>
+</tr>
+<tr>
+<td align="center">玻璃胶</td>
+<td align="center">卸甲水</td>
+</tr>
+<tr>
+<td align="center">油漆</td>
+<td align="center">松节油</td>
+</tr>
+<tr>
+<td align="center">胶带不干胶</td>
+<td align="center">酒精</td>
+</tr>
+<tr>
+<td align="center">石材铁锈</td>
+<td align="center">草酸</td>
+</tr>
+<tr>
+<td align="center">瓷砖黑印</td>
+<td align="center">金属划痕清洁剂 美缝剂</td>
+</tr>
+<tr>
+<td align="center">旧血渍</td>
+<td align="center">双氧水 硫磺皂</td>
+</tr>
+<tr>
+<td align="center">旧血渍</td>
+<td align="center">双氧水</td>
+</tr>
+</tbody></table>
 ]]></content>
       <categories>
         <category>技巧</category>
